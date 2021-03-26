@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure booking</title>
+
+    <script>document.getElementsByTagName("html")[0].className = "js";</script>
+
+    <link rel='stylesheet' id='tna-parent-styles-css' href='styles/dist/base-sass.css' type='text/css' media='all' />
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T8DSWV');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8DSWV"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header id="header">
+    <a id="skip-to-main-content" href="#main-content">Skip to Main Content</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 col-sm-5" id="logo-holder">
+                <button aria-label="Toggle menu" id="mega-menu-mobile"></button>
+                <a href="https://dev-www.nationalarchives.gov.uk" title="Go to The National Archives homepage"
+                   class="visible-lg visible-md visible-sm">
+                    <img src="/book-a-reading-room-visit/images/logo-white.png" alt="The National Archives" class="img-responsive logo" />
+                </a>
+            </div>
+            <div class="col-xs-8 col-sm-2" id="mobile-logo-holder">
+                <button title="Main menu" aria-label="Toggle menu" id="mega-menu-pull-down"
+                        class="hidden-xs">
+                    <span>Menu</span>
+                </button>
+                <a href="https://www.nationalarchives.gov.uk" title="Go to The National Archives homepage"
+                   class="hidden-lg hidden-md hidden-sm">
+                    <img src="/book-a-reading-room-visit/images/logo-white.png" alt="The National Archives" class="img-responsive" />
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav id="nav" class="navigation">
+    <div class="mega-menu clearfix">
+        <ul class="main-ul">
+    <li>
+        <a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about" class="toggle-sub-menu">About us</a>
+        <ul class="sub-menu">
+            <li class="mobile-home-link"><a href="https://www.nationalarchives.gov.uk/about">About us home</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/our-role/">Our role</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/visit-us/">Visit us</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/visit-us/opening-times/">Opening times</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/visit-us/whats-on/">What’s on</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/visit-us/venue-hire/">Venue hire</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/jobs/">Jobs</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/get-involved/">Get involved</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/news/">News</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/commercial-opportunities/">Commercial opportunities</a></li>
+        </ul>
+    </li>
+    <li>
+        <a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/education/" class="toggle-sub-menu">Education</a>
+        <ul class="sub-menu">
+            <li class="mobile-home-link"><a href="https://www.nationalarchives.gov.uk/education/">Education home</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/education/sessions-and-resources/?time-period=medieval,early-modern,empire-and-industry,victorians,early-20th-century,interwar,second-world-war,postwar">Time periods</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/education/sessions-and-resources/?resource-type=lesson">Lessons</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/education/sessions-and-resources/?resource-type=workshop">Workshops</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/education/teachers/professional-development/">Professional development</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/education/teachers/">For teachers</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/education/students/">For students</a></li>
+        </ul>
+    </li>
+    <li>
+        <a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/help-with-your-research" class="toggle-sub-menu">Help with your research</a>
+        <ul class="sub-menu">
+            <li class="mobile-home-link"><a href="https://www.nationalarchives.gov.uk/help-with-your-research">Help with your research home</a></li>
+            <li><a data-gtm="mega-menu" href="https://discovery.nationalarchives.gov.uk/">Search Discovery, our catalogue</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/help-with-your-research/start-here/">Start your research here</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/help-with-your-research/research-guides-keywords/">Research guides A-Z</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=online">Online collections</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/webarchive/">UK Government Web Archive</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/contact-us/british-citizenship-services/">British citizenship services</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/help-with-your-research/record-copying/">Record copying</a></li>
+        </ul>
+    </li>
+    <li>
+        <a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/information-management/" class="toggle-sub-menu">Information management</a>
+        <ul class="sub-menu">
+            <li class="mobile-home-link"><a href="https://www.nationalarchives.gov.uk/information-management/">Information management home</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/information-management/browse-guidance-standards/">Guidance and standards A-Z</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">Copyright</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/information-management/manage-information/">How to manage your information</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/">Re-using PSI</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/information-management/producing-official-publications/">Producing official publications</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/information-management/legislation/">Legislation and regulations</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/information-management/training/">Training</a></li>
+        </ul>
+    </li>
+    <li>
+        <a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/archives-sector" class="toggle-sub-menu">Archives sector</a>
+        <ul class="sub-menu">
+            <li class="mobile-home-link"><a href="https://www.nationalarchives.gov.uk/archives-sector">Archives sector home</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/archives-sector/our-archives-sector-role/historical-manuscripts-commission/">Historical Manuscripts Commission</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/archives-sector/finding-funding/">Finding funding</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/archives-sector/projects-and-programmes/">Projects and programmes</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/archives-sector/case-studies-and-research-reports/">Case studies and research reports</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/">Operating your archive</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/archives-sector/our-archives-sector-role/">Our role in the archives sector</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="toggle-sub-menu" id="more-link">More…</div>
+        <ul class="sub-menu">
+            <li><a data-gtm="mega-menu" href="https://shop.nationalarchives.gov.uk/">Shop</a></li>
+            <li><a data-gtm="mega-menu" href="https://images.nationalarchives.gov.uk/">Image library</a></li>
+            <li><a data-gtm="mega-menu" href="https://blog.nationalarchives.gov.uk/">Blog</a></li>
+            <li><a data-gtm="mega-menu" href="https://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
+            <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/contact-us/">Contact us</a></li>
+        </ul>
+    </li>
+</ul>
+    </div>
+</nav>
+
+
+    <main class="pb-3" id="main-content">
+        <div class="container">
+
+
+<h1 class="display-4">2. Enter your details</h1>
+
+<div class="container content-wrapper">
+
+    <div class="text-center">
+        <section class="row" id="progress-bar">
+            <h2 class="sr-only">Progress</h2>
+            <div class="col-md-12">
+                <ol>
+                    <li><span class="step-number">1</span> <span class="step">Select a date</span></li>
+                    <li aria-current="page" class="active"><span class="step-number">2</span> <span class="step">Enter your details</span></li>
+                    <li><span class="step-number">3</span> <span class="step">Reservation confirmation</span></li>
+                    <li><span class="step-number">4</span> <span class="step">Order documents</span></li>
+                    <li><span class="step-number">5</span> <span class="step">Order complete</span></li>
+                </ol>
+            </div>
+        </section>
+    </div>
+
+    <div class="heading">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>You are about to provisionally book this visit</h2>
+                <p class="no-margin">Your booking will be confirmed when you submit a document order.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-details">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Visit type</th>
+                            <td>Bulk order visit</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Visit date</th>
+                            <td>Tuesday 06 April 2021</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Reading room</th>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="text-center">
+                    <p class="no-margin">
+                        Once you choose a date and make a provisional booking, you will not be able to change your visit date unless you
+                        cancel your existing booking.
+                    </p>
+                    <form class="margin-bottom" action="/book-a-reading-room-visit/bulk-order-visit/cancel-provision" method="post">
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYc1oz9VVRvM2-jFYU1xSLiqKAXus1zjElrbYIGrTHR-WOLy1eLZvEHX1uIbe4JNYJtDzxToHIDqo1kFV_Vk4rvNdsmgq3EYosjDO1PXqyrfIp74XWLwCwYJI-NThGkNSpc" />
+                        <input id="BookingReference" name="BookingReference" type="hidden" value="RR682-150-2044F" />
+                        <input id="seattype" name="seattype" type="hidden" value="" />
+                        <button type="submit" class="btn-link">Cancel and choose a different date</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="prompt-grey full-width">
+                    <p class="bold-text">You have 20 minutes to enter your details.</p>
+                    <span id="timer">Enter you details by 03:50 PM British Summer Time (BST).</span>
+                    <small>If you do not complete the form by this time we will cancel your seat and you will need to start the process again.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form action="/book-a-reading-room-visit/bulk-order-visit/booking-confirmation" method="post">
+        <div class="reader-ticket-form">
+            <div class="row">
+                <div class="col-md-12">
+                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYc1oz9VVRvM2-jFYU1xSLiqKAXus1zjElrbYIGrTHR-WOLy1eLZvEHX1uIbe4JNYJtDzxToHIDqo1kFV_Vk4rvNdsmgq3EYosjDO1PXqyrfIp74XWLwCwYJI-NThGkNSpc" />
+                    <input id="BookingReference" name="BookingReference" type="hidden" value="RR682-150-2044F" />
+                    <input id="seattype" name="seattype" type="hidden" value="" />
+                    <input data-val="true" data-val-required="The BookingStartDate field is required." id="BookingStartDate" name="BookingStartDate" type="hidden" value="04/06/2021 00:00:00" />
+                    <fieldset>
+                        <legend class="sr-only">Enter your reader’s ticket number</legend>
+
+                        <div class="form-row">
+                            <label for="ticket">Enter your reader’s ticket number</label>
+                            <p class="helper-text">
+                                You can find this below the barcode on the back of your reader’s ticket card.
+                                If you don't have a reader's ticket card, you can use your temporary ticket number, which starts with ’T’.
+                            </p>
+
+                            <input id="Ticket" name="Ticket" placeholder="Enter ticket number" required="True" type="text" value="" />
+                            <span id="ticket-error" class="form-error"><span class="field-validation-valid" data-valmsg-for="Ticket" data-valmsg-replace="true"></span></span>
+
+                            <div class="prompt-white max-width-480 margin-top">
+                                <p>If you don’t have a valid reader’s ticket or temporary reader’s ticket number, you won’t be able to proceed.</p>
+                                <a href="/">Register for or renew a reader’s ticket ></a>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Enter your first name and last name</legend>
+
+                        <div class="form-row">
+                            <p class="helper-text">This should be the same as the name on your reader’s ticket card.</p>
+
+                            <label for="firstname" class="sr-only">First name</label>
+                            <input id="FirstName" name="FirstName" placeholder="Enter first name" required="True" type="text" value="" />
+                            <span id="firstname-error" class="form-error"><span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span></span>
+
+                            <label for="lastname" class="sr-only">Last name</label>
+                            <input id="LastName" name="LastName" placeholder="Enter last name" required="True" type="text" value="" />
+                            <span id="lastname-error" class="form-error"><span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span></span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="sr-only">Enter your email address and/or telephone number</legend>
+
+                        <div class="form-row">
+                            <label for="email">Email address</label>
+                            <p class="helper-text">
+                                We will use this to send you a booking confirmation email with a link to
+                                your document order form and a reminder email before your visit.
+                            </p>
+
+                            <input data-val="true" data-val-email="The Email field is not a valid e-mail address." id="Email" name="Email" placeholder="Enter email address" type="text" value="" />
+                            <span id="email-error" class="form-error"><span class="field-validation-valid emphasis-error" data-valmsg-for="email" data-valmsg-replace="true"></span></span>
+
+                        </div>
+
+                        <div class="form-row">
+                            <label for="phone">Telephone number</label>
+                            <p class="helper-text">
+                                If you provide a telephone number only, you will need to note down the
+                                booking reference we are about to give you on the next page.
+                            </p>
+
+                            <input id="phone" name="Phone" type="text" value="" />
+                            <span id="phone-error" class="emphasis-error"><span class="field-validation-valid emphasis-error" data-valmsg-for="phone" data-valmsg-replace="true"></span></span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="sr-only">Please complete the following checkboxes</legend>
+
+                        <div class="form-row checkbox">
+                            <input data-val="true" data-val-required="The AcceptTsAndCs field is required." id="terms-conditions" name="AcceptTsAndCs" required="True" type="checkbox" value="true" />
+                            <label for="terms-conditions">Accept our <a href="#">terms of use</a></label>
+                        </div>
+
+                        <div class="form-row checkbox">
+                            <input data-val="true" data-val-required="The AcceptCovidCharter field is required." id="covid-charter" name="AcceptCovidCharter" required="True" type="checkbox" value="true" />
+                            <label for="covid-charter">Accept our <a href="#">COVID-19 Visitor Charter</a> (PDF; opens in a new window)</label>
+                        </div>
+
+                        <div class="form-row checkbox">
+                            <input data-val="true" data-val-required="The NoFaceCovering field is required." id="face-covering" name="NoFaceCovering" type="checkbox" value="true" />
+                            <label for="face-covering">
+                                I have a legitimate reason to <a href="#">not wear a face covering</a>.
+                                This information won’t be shared with the NHS Test and Trace service.
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-row">
+                        <button type="submit" class="button" name="submitbutton" value="reserve">Complete provisional booking ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <input name="AcceptTsAndCs" type="hidden" value="false" /><input name="AcceptCovidCharter" type="hidden" value="false" /><input name="NoFaceCovering" type="hidden" value="false" /></form>
+</div>
+
+        </div>
+    </main>
+
+    <footer id="footer">
+    <h2 class="sr-only">Footer</h2>
+    <div class="newsletter">
+    <div class="container">
+        <div class="row newsletter-content">
+            <div class="col-md-1">
+                <div class="news-icon">
+                    <div class="icon-circle icon-envelope icon-size-64"></div>
+                </div>
+            </div>
+            <div class="col-md-11">
+                <div class="news-content" id="newsletterAccessibility">
+                    <h3>Sign me up to The National Archives' mailing list</h3>
+                    <p>Subscribe now for regular news, updates and priority booking for events.<br><a href="https://www.nationalarchives.gov.uk/contact-us/email-updates/" class="button">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+    <div class="footer-col col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div class="row">
+            <div class="footer-col col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                <img src="/book-a-reading-room-visit/images/tna-square-white-logo.png" srcset="/book-a-reading-room-visit/images/tna-square-white-logo.svg" alt="The National Archives" class="img-responsive square-logo">
+                <address>
+                    The National Archives<br />
+                    Kew, Richmond<br />
+                    TW9 4DU
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="footer-col col-xs-12 col-sm-12 col-md-6">
+        <div class="row">
+            <div class="footer-col col-xs-12 col-sm-6 col-md-6">
+                <h3>Find out more</h3>
+                <ul>
+                    <li><a href="https://www.nationalarchives.gov.uk/contact-us/">Contact us</a></li>
+                    <li><a href="https://www.nationalarchives.gov.uk/about/press-room/">Press room</a></li>
+                    <li><a href="https://www.nationalarchives.gov.uk/about/jobs/">Jobs and careers</a></li>
+                    <li><a href="https://www.nationalarchives.gov.uk/about/get-involved/friends-of-the-national-archives/">Friends of The National Archives</a></li>
+                </ul>
+            </div>
+            <div class="footer-col col-xs-12 col-sm-6 col-md-6">
+                <h3>Websites</h3>
+                <ul>
+                    <li><a href="https://blog.nationalarchives.gov.uk/">Blog</a></li>
+                    <li><a href="https://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
+                    <li><a href="http://bookshop.nationalarchives.gov.uk/">Bookshop</a></li>
+                    <li><a href="https://images.nationalarchives.gov.uk/">Image library</a></li>
+                    <li><a href="https://www.nationalarchives.gov.uk/webarchive/">UK Government Web Archive</a></li>
+                    <li><a href="https://www.legislation.gov.uk/" target="_blank" rel="noreferrer" title="Opens a new window">Legislation.gov.uk<span class="sr-only">Opens a new window</span></a></li>
+                    <li><a href="https://www.thegazette.co.uk/" target="_blank" rel="noreferrer" title="Opens a new window">The Gazette<span class="sr-only">Opens a new window</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer-col col-xs-12 col-sm-6 col-md-6">
+                <h3>Site help</h3>
+                <ul>
+                    <li><a href="https://www.nationalarchives.gov.uk/help/">Help</a></li>
+                    <li><a href="https://www.nationalarchives.gov.uk/help/a-to-z/">Website A-Z index</a></li>
+                    <li><a href="https://www.nationalarchives.gov.uk/help/web-accessibility/">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-col col-xs-12 col-sm-6 col-md-6">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="https://www.nationalarchives.gov.uk/legal/">Terms of use</a></li>
+                    <li><a href="https://www.nationalarchives.gov.uk/legal/privacy.htm">Privacy policy</a></li>
+                    <li><a href="https://www.nationalarchives.gov.uk/legal/cookies.htm">Cookies</a></li>
+                    <li><a href="https://www.nationalarchives.gov.uk/about/freedom-of-information/">Freedom of Information</a></li>
+                    <li><a href="https://www.nationalarchives.gov.uk/about/our-role/transparency/">Transparency</a></li>
+                    <li><a href="https://www.nationalarchives.gov.uk/legal/our-fees.htm">Our fees</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-col col-xs-12 col-sm-12 col-md-3">
+        <div class="row">
+            <div class="footer-col col-xs-12 col-sm-6 col-md-12">
+                <h3>Follow us</h3>
+                <div class="follow-us">
+                    <a href="https://twitter.com/UKNatArchives" title="Follow us on Twitter - Opens a new window" target="_blank" rel="noreferrer">
+                        <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/twitter.png"
+                             alt="Twitter logo">
+                        <span class="sr-only">Opens a new window</span>
+                    </a>
+                    <a href="https://www.youtube.com/c/TheNationalArchivesUK" title="Follow us on YouTube - Opens a new window"
+                       target="_blank" rel="noreferrer">
+                        <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/youtube-play.png"
+                             alt="YouTube logo">
+                        <span class="sr-only">Opens a new window</span>
+                    </a>
+                    <a href="https://www.flickr.com/photos/nationalarchives" title="Follow us on Flickr - Opens a new window"
+                       target="_blank" rel="noreferrer">
+                        <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/flickr.png" alt="Flickr logo">
+                        <span class="sr-only">Opens a new window</span>
+                    </a>
+                    <a href="https://www.facebook.com/TheNationalArchives" title="Follow us on Facebook - Opens a new window"
+                       target="_blank" rel="noreferrer">
+                        <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/facebook.png"
+                             alt="Facebook logo">
+                        <span class="sr-only">Opens a new window</span>
+                    </a>
+                    <a href="http://www.nationalarchives.gov.uk/rss/" title="Follow us via RSS">
+                        <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/rss.png" alt="RSS logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col col-xs-12 col-sm-6 col-md-12">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row footer-base">
+    <div class="col-xs-12 col-sm-9 col-md-9 ogl">
+        <a title="External website - opens in a new window" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/"> <img alt="Open Government License logo" src="https://www.nationalarchives.gov.uk/images/global/logo-ogl.png" /> <span class="sr-only">Opens in a new window</span> </a>
+        <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence v3.0</a>, <br />except where otherwise stated </p>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 gov-uk">
+        <a class="footer-base-external-branding-gov-logo-adjust" title="External website - opens in a new window" href="https://gov.uk/" target="_blank" rel="noreferrer"> <img alt="GOV.UK logo" src="https://www.nationalarchives.gov.uk/images/global/gov-uk.png" /> <span class="sr-only">Opens in a new window</span> </a>
+    </div>
+</div>
+        </div>
+    </div>
+</footer>
+
+    <script src="/book-a-reading-room-visit/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/book-a-reading-room-visit/js/mega-menu.js"></script>
+    <script src="/book-a-reading-room-visit/js/cookie-banner.js"></script>
+</body>
+</html>
