@@ -1,0 +1,21 @@
+{
+  "name": "ds-book-a-reading-room-visit-frontend",
+  "version": "1.0.0",
+  "description": "HTML, SASS and JavaScript for the frontend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch styles/sass/base-sass.scss styles/dist/base-sass.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nationalarchives/ds-book-a-reading-room-visit-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nationalarchives/ds-book-a-reading-room-visit-frontend/issues"
+  },
+  "homepage": "https://github.com/nationalarchives/ds-book-a-reading-room-visit-frontend#readme"
+}
