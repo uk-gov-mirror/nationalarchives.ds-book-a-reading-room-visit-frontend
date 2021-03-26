@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visit availability</title>
+    <title>Secure booking</title>
 
     <script>document.getElementsByTagName("html")[0].className = "js";</script>
 
-    <link rel='stylesheet' id='tna-parent-styles-css' href='/book-a-reading-room-visit/css/compiled-css/base-sass.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='tna-parent-styles-css' href='/styles/dist/base-sass.css' type='text/css' media='all' />
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
@@ -142,9 +142,9 @@
 
     <main class="pb-3" id="main-content">
         <div class="container">
-            
 
-<h1 class="display-4">1. Select a date</h1>
+
+<h1 class="display-4">2. Enter your details</h1>
 
 <div class="container content-wrapper">
 
@@ -153,8 +153,8 @@
             <h2 class="sr-only">Progress</h2>
             <div class="col-md-12">
                 <ol>
-                    <li aria-current="page" class="active"><span class="step-number">1</span> <span class="step">Select a date</span></li>
-                    <li><span class="step-number">2</span> <span class="step">Enter your details</span></li>
+                    <li><span class="step-number">1</span> <span class="step">Select a date</span></li>
+                    <li aria-current="page" class="active"><span class="step-number">2</span> <span class="step">Enter your details</span></li>
                     <li><span class="step-number">3</span> <span class="step">Reservation confirmation</span></li>
                     <li><span class="step-number">4</span> <span class="step">Order documents</span></li>
                     <li><span class="step-number">5</span> <span class="step">Order complete</span></li>
@@ -165,161 +165,163 @@
 
     <div class="heading">
         <div class="row">
-            <div class="col-lg-8 col-md-8">
-                <h2>
-                    You are viewing bulk order visit availability
-                </h2>
+            <div class="col-md-12">
+                <h2>You are about to provisionally book this visit</h2>
+                <p class="no-margin">Your booking will be confirmed when you submit a document order.</p>
             </div>
-            <div class="col-lg-4 col-md-4">
-                <div class="visit-toggler">
-                        <a href="/book-a-reading-room-visit/standard-order-visit/availability">Standard visit availability ></a>
+        </div>
+    </div>
+
+    <div class="booking-details">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Visit type</th>
+                            <td>Bulk order visit</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Visit date</th>
+                            <td>Tuesday 06 April 2021</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Reading room</th>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="text-center">
+                    <p class="no-margin">
+                        Once you choose a date and make a provisional booking, you will not be able to change your visit date unless you
+                        cancel your existing booking.
+                    </p>
+                    <form class="margin-bottom" action="/book-a-reading-room-visit/bulk-order-visit/cancel-provision" method="post">
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYcYkbINuygENGK38EPL7TIHvRBbAbzEqQz8crKax-h8RD3ZrIm2ja5kok-mbqA3RsSFk6wHIgPEC3W7TGGm9d-yBGK_7xJ5cmIbGMUcGiAfod9_kZT6p0Gg2G6LbnR-MQU" />
+                        <input id="BookingReference" name="BookingReference" type="hidden" value="RR702-680-2046D" />
+                        <input id="seattype" name="seattype" type="hidden" value="" />
+                        <button type="submit" class="btn-link">Cancel and choose a different date</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div id="room-selection" class="align-left">
-            <div class="col-md-4 col-sm-4">
-                <h3>Room information</h3>
-
-
-                    <div class="prompt-white">
-                        <p class="bold-text">Which room will I be in?</p>
-                        <p class="helper-text no-margin">All of our bulk orders are in the Map and Large document reading room</p>
-                    </div>
-                    <div class="prompt-white">
-                        <p class="bold-text">Are camera stands available?</p>
-                        <p class="helper-text no-margin">
-                            Some camera stands are available. If you need one, please tell us in the 'Additional access requirements or
-                            research requests' box when you complete your document order
-                        </p>
-                    </div>
-                    <div class="prompt-white">
-                        <p class="bold-text">Are accessible seats available?</p>
-                        <p class="helper-text no-margin">
-                            All seats in our reading rooms are accessible. You can tell us about your access needs when you order your
-                            documents in step 4.
-                        </p>
-                    </div>
-            </div>
-
-        </div>
-
-        <div id="date-selection">
-            <div class="col-md-8 col-sm-8">
-                <h3>Available dates</h3>
-                <ul>
-                        <li class="date">
-                                <form action="/book-a-reading-room-visit/bulk-order-visit/secure-booking" method="POST">
-                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYe6nYtDpg5mKyxoq7AfQziH0j8AApJzcicRD-PhAgLNEDVlsG4zEEDctSoPqCXBHO3_8N_GXrc8ToJMHVYlex63xP-l7AhlTMFst1qjd0biYQB7Su355snccfKJ-TrcqB0" />
-                                    <input name="seattype" type="hidden" value="" />
-                                    <input name="bookingstartdate" type="hidden" value="04/06/2021 00:00:00" />
-                                    <button class="button" type="submit">
-                                        <span class="col-md-12 col-sm-12 col-xs-12">
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-left">Tuesday 06 April</span>
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-right">4 places available</span>
-                                        </span>
-                                    </button>
-                                </form>
-                        </li>
-                        <li class="date">
-                                <form action="/book-a-reading-room-visit/bulk-order-visit/secure-booking" method="POST">
-                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYe6nYtDpg5mKyxoq7AfQziH0j8AApJzcicRD-PhAgLNEDVlsG4zEEDctSoPqCXBHO3_8N_GXrc8ToJMHVYlex63xP-l7AhlTMFst1qjd0biYQB7Su355snccfKJ-TrcqB0" />
-                                    <input name="seattype" type="hidden" value="" />
-                                    <input name="bookingstartdate" type="hidden" value="04/08/2021 00:00:00" />
-                                    <button class="button" type="submit">
-                                        <span class="col-md-12 col-sm-12 col-xs-12">
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-left">Thursday 08 April</span>
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-right">3 places available</span>
-                                        </span>
-                                    </button>
-                                </form>
-                        </li>
-                        <li class="date">
-                                <form action="/book-a-reading-room-visit/bulk-order-visit/secure-booking" method="POST">
-                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYe6nYtDpg5mKyxoq7AfQziH0j8AApJzcicRD-PhAgLNEDVlsG4zEEDctSoPqCXBHO3_8N_GXrc8ToJMHVYlex63xP-l7AhlTMFst1qjd0biYQB7Su355snccfKJ-TrcqB0" />
-                                    <input name="seattype" type="hidden" value="" />
-                                    <input name="bookingstartdate" type="hidden" value="04/13/2021 00:00:00" />
-                                    <button class="button" type="submit">
-                                        <span class="col-md-12 col-sm-12 col-xs-12">
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-left">Tuesday 13 April</span>
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-right">3 places available</span>
-                                        </span>
-                                    </button>
-                                </form>
-                        </li>
-                        <li class="date">
-                                <form action="/book-a-reading-room-visit/bulk-order-visit/secure-booking" method="POST">
-                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYe6nYtDpg5mKyxoq7AfQziH0j8AApJzcicRD-PhAgLNEDVlsG4zEEDctSoPqCXBHO3_8N_GXrc8ToJMHVYlex63xP-l7AhlTMFst1qjd0biYQB7Su355snccfKJ-TrcqB0" />
-                                    <input name="seattype" type="hidden" value="" />
-                                    <input name="bookingstartdate" type="hidden" value="04/15/2021 00:00:00" />
-                                    <button class="button" type="submit">
-                                        <span class="col-md-12 col-sm-12 col-xs-12">
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-left">Thursday 15 April</span>
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-right">2 places available</span>
-                                        </span>
-                                    </button>
-                                </form>
-                        </li>
-                        <li class="date">
-                                <form action="/book-a-reading-room-visit/bulk-order-visit/secure-booking" method="POST">
-                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYe6nYtDpg5mKyxoq7AfQziH0j8AApJzcicRD-PhAgLNEDVlsG4zEEDctSoPqCXBHO3_8N_GXrc8ToJMHVYlex63xP-l7AhlTMFst1qjd0biYQB7Su355snccfKJ-TrcqB0" />
-                                    <input name="seattype" type="hidden" value="" />
-                                    <input name="bookingstartdate" type="hidden" value="04/20/2021 00:00:00" />
-                                    <button class="button" type="submit">
-                                        <span class="col-md-12 col-sm-12 col-xs-12">
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-left">Tuesday 20 April</span>
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-right">4 places available</span>
-                                        </span>
-                                    </button>
-                                </form>
-                        </li>
-                        <li class="date">
-                                <form action="/book-a-reading-room-visit/bulk-order-visit/secure-booking" method="POST">
-                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYe6nYtDpg5mKyxoq7AfQziH0j8AApJzcicRD-PhAgLNEDVlsG4zEEDctSoPqCXBHO3_8N_GXrc8ToJMHVYlex63xP-l7AhlTMFst1qjd0biYQB7Su355snccfKJ-TrcqB0" />
-                                    <input name="seattype" type="hidden" value="" />
-                                    <input name="bookingstartdate" type="hidden" value="04/22/2021 00:00:00" />
-                                    <button class="button" type="submit">
-                                        <span class="col-md-12 col-sm-12 col-xs-12">
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-left">Thursday 22 April</span>
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-right">4 places available</span>
-                                        </span>
-                                    </button>
-                                </form>
-                        </li>
-                        <li class="date">
-                                <form action="/book-a-reading-room-visit/bulk-order-visit/secure-booking" method="POST">
-                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYe6nYtDpg5mKyxoq7AfQziH0j8AApJzcicRD-PhAgLNEDVlsG4zEEDctSoPqCXBHO3_8N_GXrc8ToJMHVYlex63xP-l7AhlTMFst1qjd0biYQB7Su355snccfKJ-TrcqB0" />
-                                    <input name="seattype" type="hidden" value="" />
-                                    <input name="bookingstartdate" type="hidden" value="04/27/2021 00:00:00" />
-                                    <button class="button" type="submit">
-                                        <span class="col-md-12 col-sm-12 col-xs-12">
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-left">Tuesday 27 April</span>
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-right">4 places available</span>
-                                        </span>
-                                    </button>
-                                </form>
-                        </li>
-                        <li class="date">
-                                <form action="/book-a-reading-room-visit/bulk-order-visit/secure-booking" method="POST">
-                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYe6nYtDpg5mKyxoq7AfQziH0j8AApJzcicRD-PhAgLNEDVlsG4zEEDctSoPqCXBHO3_8N_GXrc8ToJMHVYlex63xP-l7AhlTMFst1qjd0biYQB7Su355snccfKJ-TrcqB0" />
-                                    <input name="seattype" type="hidden" value="" />
-                                    <input name="bookingstartdate" type="hidden" value="04/29/2021 00:00:00" />
-                                    <button class="button" type="submit">
-                                        <span class="col-md-12 col-sm-12 col-xs-12">
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-left">Thursday 29 April</span>
-                                            <span class="col-md-6 col-sm-6 col-xs-6 align-right">4 places available</span>
-                                        </span>
-                                    </button>
-                                </form>
-                        </li>
-                </ul>
+    <div class="text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="prompt-grey full-width">
+                    <p class="bold-text">You have 20 minutes to enter your details.</p>
+                    <span id="timer">Enter you details by 12:00 AM British Summer Time (BST).</span>
+                    <small>If you do not complete the form by this time we will cancel your seat and you will need to start the process again.</small>
+                </div>
             </div>
         </div>
     </div>
+
+    <form action="/book-a-reading-room-visit/bulk-order-visit/booking-confirmation" method="post">
+        <div class="reader-ticket-form">
+            <div class="row">
+                <div class="col-md-12">
+                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYcYkbINuygENGK38EPL7TIHvRBbAbzEqQz8crKax-h8RD3ZrIm2ja5kok-mbqA3RsSFk6wHIgPEC3W7TGGm9d-yBGK_7xJ5cmIbGMUcGiAfod9_kZT6p0Gg2G6LbnR-MQU" />
+                    <input id="BookingReference" name="BookingReference" type="hidden" value="RR702-680-2046D" />
+                    <input id="seattype" name="seattype" type="hidden" value="" />
+                    <input data-val="true" data-val-required="The BookingStartDate field is required." id="BookingStartDate" name="BookingStartDate" type="hidden" value="04/06/2021 00:00:00" />
+                    <fieldset>
+                        <legend class="sr-only">Enter your reader’s ticket number</legend>
+
+                        <div class="form-row">
+                            <label for="ticket">Enter your reader’s ticket number</label>
+                            <p class="helper-text">
+                                You can find this below the barcode on the back of your reader’s ticket card.
+                                If you don't have a reader's ticket card, you can use your temporary ticket number, which starts with ’T’.
+                            </p>
+
+                            <input class="input-validation-error" id="Ticket" name="Ticket" placeholder="Enter ticket number" required="True" type="text" value="" />
+                            <span id="ticket-error" class="form-error"><span class="field-validation-error" data-valmsg-for="Ticket" data-valmsg-replace="true">Valid reader ticket required.</span></span>
+
+                            <div class="prompt-white max-width-480 margin-top">
+                                <p>If you don’t have a valid reader’s ticket or temporary reader’s ticket number, you won’t be able to proceed.</p>
+                                <a href="/">Register for or renew a reader’s ticket ></a>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Enter your first name and last name</legend>
+
+                        <div class="form-row">
+                            <p class="helper-text">This should be the same as the name on your reader’s ticket card.</p>
+
+                            <label for="firstname" class="sr-only">First name</label>
+                            <input class="input-validation-error" id="FirstName" name="FirstName" placeholder="Enter first name" required="True" type="text" value="" />
+                            <span id="firstname-error" class="form-error"><span class="field-validation-error" data-valmsg-for="FirstName" data-valmsg-replace="true">Firstname is required.</span></span>
+
+                            <label for="lastname" class="sr-only">Last name</label>
+                            <input class="input-validation-error" id="LastName" name="LastName" placeholder="Enter last name" required="True" type="text" value="" />
+                            <span id="lastname-error" class="form-error"><span class="field-validation-error" data-valmsg-for="LastName" data-valmsg-replace="true">Lastname is required.</span></span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="sr-only">Enter your email address and/or telephone number</legend>
+
+                        <div class="form-row">
+                            <label for="email">Email address</label>
+                            <p class="helper-text">
+                                We will use this to send you a booking confirmation email with a link to
+                                your document order form and a reminder email before your visit.
+                            </p>
+
+                            <input data-val="true" data-val-email="The Email field is not a valid e-mail address." id="Email" name="Email" placeholder="Enter email address" type="text" value="" />
+                            <span id="email-error" class="form-error"><span class="field-validation-valid emphasis-error" data-valmsg-for="email" data-valmsg-replace="true"></span></span>
+
+                        </div>
+
+                        <div class="form-row">
+                            <label for="phone">Telephone number</label>
+                            <p class="helper-text">
+                                If you provide a telephone number only, you will need to note down the
+                                booking reference we are about to give you on the next page.
+                            </p>
+
+                            <input class="input-validation-error" id="phone" name="Phone" type="text" value="" />
+                            <span id="phone-error" class="emphasis-error" style="display: initial"><span class="field-validation-error emphasis-error" data-valmsg-for="phone" data-valmsg-replace="true">Either phone or email is required.</span></span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="sr-only">Please complete the following checkboxes</legend>
+
+                        <div class="form-row checkbox">
+                            <input data-val="true" data-val-required="The AcceptTsAndCs field is required." id="terms-conditions" name="AcceptTsAndCs" required="True" type="checkbox" value="true" />
+                            <label for="terms-conditions">Accept our <a href="#">terms of use</a></label>
+                        </div>
+
+                        <div class="form-row checkbox">
+                            <input data-val="true" data-val-required="The AcceptCovidCharter field is required." id="covid-charter" name="AcceptCovidCharter" required="True" type="checkbox" value="true" />
+                            <label for="covid-charter">Accept our <a href="#">COVID-19 Visitor Charter</a> (PDF; opens in a new window)</label>
+                        </div>
+
+                        <div class="form-row checkbox">
+                            <input data-val="true" data-val-required="The NoFaceCovering field is required." id="face-covering" name="NoFaceCovering" type="checkbox" value="true" />
+                            <label for="face-covering">
+                                I have a legitimate reason to <a href="#">not wear a face covering</a>.
+                                This information won’t be shared with the NHS Test and Trace service.
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-row">
+                        <button type="submit" class="button" name="submitbutton" value="reserve">Complete provisional booking ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <input name="AcceptTsAndCs" type="hidden" value="false" /><input name="AcceptCovidCharter" type="hidden" value="false" /><input name="NoFaceCovering" type="hidden" value="false" /></form>
 </div>
-</div>
+
         </div>
     </main>
 

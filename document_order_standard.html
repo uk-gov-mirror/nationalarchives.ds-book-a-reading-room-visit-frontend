@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booking confirmation</title>
+    <title>Order documents</title>
 
     <script>document.getElementsByTagName("html")[0].className = "js";</script>
 
@@ -143,99 +143,224 @@
     <main class="pb-3" id="main-content">
         <div class="container">
 
-<h1 class="display-4">3. Reservation confirmation</h1>
 
-<div class="container content-wrapper">
 
-    <div class="text-center">
+<h1 class="display-4">4. Order documents for your visit</h1>
+
+<div class="text-center">
+
+    <div class="container content-wrapper">
+
         <section class="row" id="progress-bar">
             <h2 class="sr-only">Progress</h2>
             <div class="col-md-12">
                 <ol>
                     <li><span class="step-number">1</span> <span class="step">Select a date</span></li>
                     <li><span class="step-number">2</span> <span class="step">Enter your details</span></li>
-                    <li aria-current="page" class="active"><span class="step-number">3</span> <span class="step">Reservation confirmation</span></li>
-                    <li><span class="step-number">4</span> <span class="step">Order documents</span></li>
+                    <li><span class="step-number">3</span> <span class="step">Reservation confirmation</span></li>
+                    <li aria-current="page" class="active"><span class="step-number">4</span> <span class="step">Order documents</span></li>
                     <li><span class="step-number">5</span> <span class="step">Order complete</span></li>
                 </ol>
             </div>
         </section>
-    </div>
 
-    <div class="heading">
-        <h2>You have made a provisional booking to visit the reading rooms</h2>
-    </div>
-
-    <div class="booking-summary text-center">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="prompt-grey full-width">
-                    <p class="bold-text">Your booking reference is RR682-150-2044F. Keep a note of this number for future reference.</p>
+        <div class="heading align-left">
+            <div class="row">
+                <div class="col-md-12">
                     <p>
-                        To confirm your booking, complete the document order form by
-                        <span class="bold-text">Sunday 28 March 2021 at 11:59 PM British Summer Time (BST).</span>
+                        You have a provisional reservation for a visit to the reading rooms. Complete this form to pre-order original
+                        documents held by The National Archives.
+                    </p>
+                    <p>
+                        If you do not complete this step by <span class="bold-text">Monday 29 March 2021 at 11:59 PM British Summer Time (BST)</span>. your visit will be automatically cancelled.
+                        A direct link to this form is also in your confirmation email, so you can return to amend or complete your
+                        document order at any point before <span class="bold-text">Monday 29 March 2021 at 11:59 PM British Summer Time (BST)</span>. Check your spam and junk email folders.
+                    </p>
+                    <p>
+                        Once this date has passed, you can't change your document order as we will begin preparing your order for your
+                        visit.
                     </p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="booking-details">
-        <div class="row">
-            <div class="col-md-12">
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th scope="row">Visit type</th>
-                            <td>
-                                Bulk order visit
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Visit date</th>
-                            <td>Tuesday 06 April 2021</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Reading room</th>
-                        </tr>
-                        <tr>
-                            <th scope="row">Seat number</th>
-                            <td>
-                                Bulk1
-                                <p class="helper-text">Based on availability, we may need to change your seat on the date of your visit.</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="booking-details">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Your reservation details</h2>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Booking reference</th>
+                                <td>RR731-820-2042X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Visit type</th>
+                                <td>
+                                    Standard order visit
+                                </td>
+                            </tr>
+                                <tr>
+                                    <th scope="row">Reading room</th>
+                                    <td>
+                                            <p>Standard document reading room</p>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <th scope="row">Visit date</th>
+                                <td>Wednesday 07 April 2021</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Seat number</th>
+                                <td>
+                                    15D
+                                    <p>Based on availability, we may need to change your seat on the date of your visit.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <form action="/book-a-reading-room-visit/standard-order-visit/cancel-booking" method="post">
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYeiz3lk7jOA5OnTqmVf00Y8IcTkydRymAIHuvWHEHxN_07Z7JKwBqLNjH5LcDJT8ThNOzpVCFFyI8H35kw_gRuvuCJw42KPQukc_wG_mHPRRZIst0bBaQ5fkd327c4iamY" />
+                        <input id="BookingReference" name="BookingReference" type="hidden" value="RR731-820-2042X" />
+                        <input id="readerticket" name="readerticket" type="hidden" value="999" />
+                        <input data-val="true" data-val-required="The SeatType field is required." id="SeatType" name="SeatType" type="hidden" value="StdRRSeat" />
+                        <input data-val="true" data-val-required="The BookingStartDate field is required." id="BookingStartDate" name="BookingStartDate" type="hidden" value="04/07/2021 00:00:00" />
+                        <input id="SeatNumber" name="SeatNumber" type="hidden" value="15D" />
+                        <button type="submit" class="btn-link">Cancel this booking ></button>
+                    </form>
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                    A direct link to this form is also in your reservation confirmation email, so you can return to your document order at any point before
-                    <span class="bold-text">Sunday 28 March 2021 at 11:59 PM British Summer Time (BST)</span>. If you can’t see the reservation confirmation email in your inbox,
-                    check your spam and junk email folders.
-                </p>
+        <div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="prompt-white">
+                        <p class="no-margin">
+                            You can add to or remove documents from this order <span class="bold-text">until Monday 29 March 2021 at 11:59 PM British Summer Time (BST)</span>.
+                        </p>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="order-form">
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="/book-a-reading-room-visit/standard-order-visit/document-order/999/RR731-820-2042X" method="POST">
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYeiz3lk7jOA5OnTqmVf00Y8IcTkydRymAIHuvWHEHxN_07Z7JKwBqLNjH5LcDJT8ThNOzpVCFFyI8H35kw_gRuvuCJw42KPQukc_wG_mHPRRZIst0bBaQ5fkd327c4iamY" />
+<fieldset>
+    <legend>Enter up to 12 documents (e.g. FO 371/114865)</legend>
+    <p>You can order between 1 and 12 documents.</p>
+    <p>Search the catalogue and note document references, and then enter the references in the order fields below.</p>
+
+    <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="order-form-field">
+            <label for="doc-1">1</label>
+            <input id="doc-1" name="doc-1" type="text" />
+        </div>
+
+        <div class="order-form-field">
+            <label for="doc-2">2</label>
+            <input id="doc-2" name="doc-2" type="text" />
+        </div>
+
+        <div class="order-form-field">
+            <label for="doc-3">3</label>
+            <input id="doc-3" name="doc-3" type="text" />
         </div>
     </div>
 
-    <div class="reservation-options">
-        <div class="row">
-            <div class="col-md-12">
-                <span class="col-lg-4 col-md-4">
-                    <a class="button primary" href="/book-a-reading-room-visit/bulk-order-visit/order-documents/999/RR682-150-2044F">Continue booking now</a>
-                </span>
+    <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="order-form-field">
+            <label for="doc-4">4</label>
+            <input id="doc-4" name="doc-4" type="text" />
+        </div>
 
-                <span class="col-lg-4 col-md-4">
-                    <a class="button primary">I'd like to continue later</a>
-                </span>
+        <div class="order-form-field">
+            <label for="doc-5">5</label>
+            <input id="doc-5" name="doc-5" type="text" />
+        </div>
+
+        <div class="order-form-field">
+            <label for="doc-6">6</label>
+            <input id="doc-6" name="doc-6" type="text" />
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="order-form-field">
+            <label for="doc-7">7</label>
+            <input id="doc-7" name="doc-7" type="text" />
+        </div>
+
+        <div class="order-form-field">
+            <label for="doc-8">8</label>
+            <input id="doc-8" name="doc-8" type="text" />
+        </div>
+
+        <div class="order-form-field">
+            <label for="doc-9">9</label>
+            <input id="doc-9" name="doc-9" type="text" />
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="order-form-field">
+            <label for="doc-10">10</label>
+            <input id="doc-10" name="doc-10" type="text" />
+        </div>
+
+        <div class="order-form-field">
+            <label for="doc-11">11</label>
+            <input id="doc-11" name="doc-11" type="text" />
+        </div>
+
+        <div class="order-form-field">
+            <label for="doc-12">12</label>
+            <input id="doc-12" name="doc-12" type="text" />
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Enter up to 3 reserve documents (e.g. FO 371/114865)</legend>
+    <p>You can provide three reserve catalogue references in case your first choices are unavailable.</p>
+
+    <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="order-form-field">
+            <label for="reserve-1">1</label>
+            <input id="reserve-1" name="reserve-1" type="text" />
+        </div>
+
+        <div class="order-form-field">
+            <label for="reserve-2">2</label>
+            <input id="reserve-2" name="reserve-2" type="text" />
+        </div>
+
+        <div class="order-form-field">
+            <label for="reserve-3">3</label>
+            <input id="reserve-3" name="reserve-3" type="text" />
+        </div>
+    </div>
+</fieldset>
+                        <fieldset>
+                            <legend>
+                                <label for="additional-reqs">Additional access requirements or research requests</label>
+                            </legend>
+
+                            <p>This should reflect the specific additional services we accomodate</p>
+
+                            <textarea id="additional-reqs" name="additional-reqs"></textarea>
+                        </fieldset>
+
+                        <button class="button" type="submit">Add these to your order</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
         </div>
     </main>
 

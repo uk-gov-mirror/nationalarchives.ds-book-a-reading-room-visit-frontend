@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booking confirmation</title>
+    <title>Manage document order</title>
 
     <script>document.getElementsByTagName("html")[0].className = "js";</script>
 
@@ -143,96 +143,147 @@
     <main class="pb-3" id="main-content">
         <div class="container">
 
-<h1 class="display-4">3. Reservation confirmation</h1>
+<h1 class="display-4">5. Order complete</h1>
 
-<div class="container content-wrapper">
+<div class="text-center">
 
-    <div class="text-center">
-        <section class="row" id="progress-bar">
+    <div class="container content-wrapper">
+
+        <<section class="row" id="progress-bar">
             <h2 class="sr-only">Progress</h2>
             <div class="col-md-12">
                 <ol>
                     <li><span class="step-number">1</span> <span class="step">Select a date</span></li>
                     <li><span class="step-number">2</span> <span class="step">Enter your details</span></li>
-                    <li aria-current="page" class="active"><span class="step-number">3</span> <span class="step">Reservation confirmation</span></li>
+                    <li><span class="step-number">3</span> <span class="step">Reservation confirmation</span></li>
                     <li><span class="step-number">4</span> <span class="step">Order documents</span></li>
-                    <li><span class="step-number">5</span> <span class="step">Order complete</span></li>
+                    <li aria-current="page" class="active"><span class="step-number">5</span> <span class="step">Order complete</span></li>
                 </ol>
             </div>
         </section>
-    </div>
 
-    <div class="heading">
-        <h2>You have made a provisional booking to visit the reading rooms</h2>
-    </div>
+        <div class="heading">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="prompt-white">
+                        <p>
+                            You can add to or remove documents from this order <span class="bold-text">until Monday 29 March 2021 at 11:59 PM British Summer Time (BST)</span>.
+                        </p>
+                        <p>
+                            Return to this form at any time before the deadline using the link below or from your confirmation email. Once the date
+                            has passed, further amendments won’t be possible as we will begin preparing your order ready for your visit.
+                        </p>
 
-    <div class="booking-summary text-center">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="prompt-grey full-width">
-                    <p class="bold-text">Your booking reference is RR682-150-2044F. Keep a note of this number for future reference.</p>
-                    <p>
-                        To confirm your booking, complete the document order form by
-                        <span class="bold-text">Sunday 28 March 2021 at 11:59 PM British Summer Time (BST).</span>
-                    </p>
+                        <div class="col-md-6 col-xs-12 col-md-offset-3 no-float">
+                            <span class="col-md-6 col-xs-12 no-float">
+                                <a href="/book-a-reading-room-visit/standard-order-visit/order-documents/999/RR731-820-2042X">Edit your order</a>
+                            </span>
+                            <span class="col-md-6 col-xs-12 no-float">
+                                <a href="#">Print your order</a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="booking-details">
-        <div class="row">
-            <div class="col-md-12">
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th scope="row">Visit type</th>
-                            <td>
-                                Bulk order visit
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Visit date</th>
-                            <td>Tuesday 06 April 2021</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Reading room</th>
-                        </tr>
-                        <tr>
-                            <th scope="row">Seat number</th>
-                            <td>
-                                Bulk1
-                                <p class="helper-text">Based on availability, we may need to change your seat on the date of your visit.</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section class="booking-details">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Your booking details</h2>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Booking reference</th>
+                                <td>RR731-820-2042X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Visit type</th>
+                                <td>
+                                    Standard order visit
+                                </td>
+                            </tr>
+                                <tr>
+                                    <th scope="row">Reading room</th>
+                                    <td>
+                                            <p>Standard document reading room</p>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <th scope="row">Visit date</th>
+                                <td>Wednesday 07 April 2021</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Seat number</th>
+                                <td>
+                                    15D
+                                    <p>Based on availability, we may need to change your seat on the date of your visit.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <form action="/book-a-reading-room-visit/standard-order-visit/cancel-booking" method="post">
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYdXD6d9rSpFgbDtLP16m7un0K1Ma7buhzoHx5Bb7-2-lxIaRQThxItxhwqMNRC12MTPyhZ47Mq1zBenWXGItup5rDItgQUkmt8f_73gJ-JkVbpdLzy4V2VdI3H9S4XUO8E" />
+                        <input id="BookingReference" name="BookingReference" type="hidden" value="RR731-820-2042X" />
+                        <input data-val="true" data-val-required="The ReaderTicket field is required." id="ReaderTicket" name="ReaderTicket" type="hidden" value="999" />
+                        <input data-val="true" data-val-required="The SeatType field is required." id="SeatType" name="SeatType" type="hidden" value="StdRRSeat" />
+                        <input data-val="true" data-val-required="The BookingStartDate field is required." id="BookingStartDate" name="BookingStartDate" type="hidden" value="04/07/2021 00:00:00" />
+                        <input id="SeatNumber" name="SeatNumber" type="hidden" value="15D" />
+                        <button type="submit" class="btn-link">Cancel this booking ></button>
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                    A direct link to this form is also in your reservation confirmation email, so you can return to your document order at any point before
-                    <span class="bold-text">Sunday 28 March 2021 at 11:59 PM British Summer Time (BST)</span>. If you can’t see the reservation confirmation email in your inbox,
-                    check your spam and junk email folders.
-                </p>
+        <section class="order-summary">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Your standard order documents</h3>
+                    <ol class="document-list">
+                        <li>
+                            <p class="bold-text">FCO 141/19497</p>
+                            <p>Kenya land transfer programme: Captain F L Jones…</p>
+                        </li>
+                        <li>
+                            <p class="bold-text">FCO 141/19497</p>
+                            <p>Kenya land transfer programme: Captain F L Jones…</p>
+                        </li>
+                        <li>
+                            <p class="bold-text">FCO 141/19497</p>
+                            <p>Kenya land transfer programme: Captain F L Jones…</p>
+                        </li>
+                        <li>
+                            <p class="bold-text">FCO 141/19497</p>
+                            <p>Kenya land transfer programme: Captain F L Jones…</p>
+                        </li>
+                        <li>
+                            <p class="bold-text">FCO 141/19497</p>
+                            <p>Kenya land transfer programme: Captain F L Jones…</p>
+                        </li>
+                    </ol>
+                </div>
+
+                    <section class="col-md-6">
+                        <h3>Your reserve documents</h3>
+                        <ol class="document-list">
+                            <li>
+                                <p class="bold-text">FCO 141/19497</p>
+                                <p>Kenya land transfer programme: Captain F L Jones…</p>
+                            </li>
+                            <li>
+                                <p class="bold-text">FCO 141/19497</p>
+                                <p>Kenya land transfer programme: Captain F L Jones…</p>
+                            </li>
+                            <li>
+                                <p class="bold-text">FCO 141/19497</p>
+                                <p>Kenya land transfer programme: Captain F L Jones…</p>
+                            </li>
+                        </ol>
+                    </section>
+
             </div>
-        </div>
-    </div>
-
-    <div class="reservation-options">
-        <div class="row">
-            <div class="col-md-12">
-                <span class="col-lg-4 col-md-4">
-                    <a class="button primary" href="/book-a-reading-room-visit/bulk-order-visit/order-documents/999/RR682-150-2044F">Continue booking now</a>
-                </span>
-
-                <span class="col-lg-4 col-md-4">
-                    <a class="button primary">I'd like to continue later</a>
-                </span>
-            </div>
-        </div>
+        </section>
+        <a class="button" href="#">Print this order</a>
     </div>
 </div>
 
