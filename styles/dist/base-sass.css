@@ -8262,7 +8262,7 @@ form input[type=checkbox] {
   justify-content: center;
   width: 22px;
   font-size: 0.7em;
-  margin-right: 0.3em;
+  margin-right: 0.5em;
   font-family: "Roboto Mono", monospace;
 }
 #progress-bar ol .step {
@@ -8274,9 +8274,10 @@ form input[type=checkbox] {
 #progress-bar ol .active .step {
   color: #111;
   padding-bottom: 0.3em;
+  border-bottom: 3px solid #333;
 }
 #progress-bar ol .active .step-number {
-  background-color: #111;
+  background-color: #134571;
 }
 
 #room-selection h2 {

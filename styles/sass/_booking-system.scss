@@ -442,7 +442,7 @@ form {
                 justify-content: center;
                 width: 22px;
                 font-size: 0.7em;
-                margin-right: 0.3em;
+                margin-right: 0.5em;
                 font-family: $heading_font;
             }
         }
@@ -460,11 +460,12 @@ form {
 
                 color: #111;
                 padding-bottom: 0.3em;
+                border-bottom: 3px solid #333;
 
             }
 
             .step-number {
-                background-color: #111;
+                background-color: #134571;
             }
         }
     }
