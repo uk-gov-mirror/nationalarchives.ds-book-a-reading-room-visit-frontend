@@ -147,7 +147,7 @@
 
 <h1 class="display-4">4. Order documents for your visit</h1>
 
-<div class="text-center">
+<div>
 
     <div class="container content-wrapper">
 
@@ -167,6 +167,7 @@
         <div class="heading align-left">
             <div class="row">
                 <div class="col-md-12">
+                    <h2>Tell us which documents you would like to see</h2>
                     <p>
                         You have a provisional reservation for a visit to the reading rooms. Complete this form to pre-order original
                         documents held by The National Archives.
@@ -208,7 +209,7 @@
                                 <th scope="row">Seat number</th>
                                 <td>
                                     Bulk1
-                                    <p>Based on availability, we may need to change your seat on the date of your visit.</p>
+                                    <span class="secondary-info">Based on availability, we may need to change your seat on the date of your visit.</span>
                                 </td>
                             </tr>
                         </tbody>
@@ -220,7 +221,7 @@
                         <input data-val="true" data-val-required="The SeatType field is required." id="SeatType" name="SeatType" type="hidden" value="BulkOrderSeat" />
                         <input data-val="true" data-val-required="The BookingStartDate field is required." id="BookingStartDate" name="BookingStartDate" type="hidden" value="04/06/2021 00:00:00" />
                         <input id="SeatNumber" name="SeatNumber" type="hidden" value="Bulk1" />
-                        <button type="submit" class="btn-link">Cancel this booking ></button>
+                        <button type="submit" class="button">Cancel this booking</button>
                     </form>
                 </div>
             </div>
@@ -229,7 +230,7 @@
         <div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="prompt-white">
+                    <div class="prompt-grey full-width warning-panel">
                         <p class="no-margin">
                             You can add to or remove documents from this order <span class="bold-text">until Sunday 28 March 2021 at 11:59 PM British Summer Time (BST)</span>.
                         </p>
@@ -245,7 +246,7 @@
                         <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYfzygHOwKdPLaVDomaBPCm8koyw2a22egMRkvKIydpe6Fki7mROr5_kNj278R2TFLkhgW2hjZcvki61rK06sFq48-Am1kvryNItF6Qb3ZR3OgQkQnRL2pKTNlrermNpQoQ" />
 <fieldset>
     <legend><label for="reference-number">Enter the department and series number (e.g. FO 371)</label></legend>
-    <p>
+    <p class="helper-text">
         We are unable to produce the following document series in bulk due to their size, condition or content:
 
         <span id="unavailable-docs">BT 42, BT 43, BT 50, BT 52, C 13, C 14, E 112, KB 122, PROB 4, WO 416</span>
@@ -256,8 +257,8 @@
 
 <fieldset>
     <legend>Enter between 20-40 documents (e.g. FO 371/114865)</legend>
-    <p>You can order a minimum of 20 documents up to a maximum of 40 from the same series.</p>
-    <p>Search the catalogue and note document references, and then enter the references in the fields below.</p>
+    <p class="helper-text">You can order a minimum of 20 documents up to a maximum of 40 from the same series.<br>
+        <a href="">Search the catalogue to find catalogue references</a></p>
 
     <div class="col-md-3 col-sm-6 col-xs-6">
         <div class="order-form-field">
