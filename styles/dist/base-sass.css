@@ -8151,6 +8151,11 @@ form input[type=checkbox] {
   min-width: 50%;
   padding: 0.6em;
 }
+@media (max-width: 480px) {
+  #additional-reqs {
+    width: 100%;
+  }
+}
 
 #conditions {
   margin-bottom: 2em !important;
