@@ -293,12 +293,13 @@ form {
   border-bottom: 4px solid #bbb;
   padding: 2em 1.5em;
 
-
   div {
     p {
       margin-bottom: 1em;
     }
   }
+
+
 }
 
 .reader-ticket-form {
@@ -515,6 +516,9 @@ form {
 
   .prompt-white {
     margin: 1em 0;
+    @media (max-width: $screen-phone) {
+      padding: 0.5em 1em;
+    }
   }
 }
 
@@ -759,4 +763,19 @@ form {
 
 .no-padding {
   padding: 0 !important;
+}
+
+details {
+
+  summary {
+    color: #134571;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  &[open] {
+    summary {
+
+    }
+  }
 }

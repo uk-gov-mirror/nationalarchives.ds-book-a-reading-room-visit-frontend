@@ -8360,6 +8360,11 @@ form input[type=checkbox] {
 #room-selection .prompt-white {
   margin: 1em 0;
 }
+@media (max-width: 480px) {
+  #room-selection .prompt-white {
+    padding: 0.5em 1em;
+  }
+}
 
 #room-selection-form fieldset {
   border: 2px solid #ddd !important;
@@ -8541,6 +8546,12 @@ form input[type=checkbox] {
 
 .no-padding {
   padding: 0 !important;
+}
+
+details summary {
+  color: #134571;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=base-sass.css.map */
