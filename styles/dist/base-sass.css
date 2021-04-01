@@ -8192,10 +8192,22 @@ form input[type=checkbox] {
   padding: 0;
   text-decoration: underline;
 }
+@media (max-width: 480px) {
+  #date-selection ul li.date button span span {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
 #date-selection ul li.date button span span:last-child {
   text-decoration: none;
   font-size: 0.9em;
   color: #444;
+}
+@media (max-width: 480px) {
+  #date-selection ul li.date button span span:last-child {
+    padding-top: 0.75em;
+  }
 }
 #date-selection ul li.date button:focus {
   background-color: #000;
@@ -8229,15 +8241,42 @@ form input[type=checkbox] {
   padding: 0;
   text-decoration: underline;
 }
+@media (max-width: 480px) {
+  #date-selection ul li.date .no-availability span span {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
 #date-selection ul li.date .no-availability span span:last-child {
   text-decoration: none;
   font-size: 0.9em;
   color: #444;
 }
+@media (max-width: 480px) {
+  #date-selection ul li.date .no-availability span span:last-child {
+    padding-top: 0.75em;
+  }
+}
+@media (max-width: 480px) {
+  #date-selection ul li.date .no-availability {
+    display: block;
+  }
+  #date-selection ul li.date .no-availability span {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
 #date-selection ul li.date .no-availability span:last-child {
   text-decoration: none;
   font-size: 0.9em;
   color: #777;
+}
+@media (max-width: 480px) {
+  #date-selection ul li.date .no-availability span:last-child {
+    padding-top: 0.75em;
+  }
 }
 
 #home .prompt-white h2 {
