@@ -8305,6 +8305,7 @@ form input[type=checkbox] {
 #progress-bar ol {
   padding-left: 0;
   margin-bottom: 0.2em;
+  text-align: center;
 }
 #progress-bar ol li {
   display: inline-block;
@@ -8331,6 +8332,18 @@ form input[type=checkbox] {
   color: #555;
   font-size: 0.85em;
   letter-spacing: -0.3px;
+}
+@media (max-width: 768px) {
+  #progress-bar ol li:not(.active) .step {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
 }
 #progress-bar ol .active .step {
   color: #111;

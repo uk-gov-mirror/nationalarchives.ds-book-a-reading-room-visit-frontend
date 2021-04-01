@@ -447,10 +447,10 @@ form {
     @include sr-only;
   }
 
-
   ol {
     padding-left: 0;
     margin-bottom: 0.2em;
+    text-align: center;
 
     li {
       display: inline-block;
@@ -482,10 +482,19 @@ form {
 
     }
 
+    @media (max-width: $screen-tablet) {
+
+      li:not(.active) {
+
+        .step {
+          @include sr-only;
+        }
+      }
+    }
+
     .active {
 
       .step {
-
         color: #111;
         padding-bottom: 0.3em;
         border-bottom: 3px solid #333;
