@@ -5810,7 +5810,7 @@ body .kbs h1 {
   margin: 3em 0 0;
   letter-spacing: 0.2px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   body .kbs h1 {
     margin-top: 1em;
   }

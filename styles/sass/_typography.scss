@@ -17,7 +17,7 @@ body {
         font-family: $body_font;
         margin: 3em 0 0;
         letter-spacing: 0.2px;
-        @media (max-width: $screen-phone) {
+        @media (max-width: $screen-tablet) {
           margin-top: 1em;
         }
       }
