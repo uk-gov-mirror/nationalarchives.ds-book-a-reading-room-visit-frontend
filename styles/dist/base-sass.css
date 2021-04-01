@@ -8553,6 +8553,17 @@ form input[type=checkbox] {
   padding: 0 !important;
 }
 
+@media (min-width: 480px) {
+  details summary[tabindex="-1"] {
+    color: #000000;
+  }
+  details summary[tabindex="-1"]:focus {
+    outline: none;
+  }
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+}
 details summary {
   color: #134571;
   text-decoration: underline;
