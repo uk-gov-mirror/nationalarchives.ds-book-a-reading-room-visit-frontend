@@ -17,6 +17,9 @@ a.button {
     .heading {
         margin-top: 1.5em;
         margin-bottom: 0;
+        @media (max-width: $screen-phone) {
+            margin-top: 0.5em;
+        }
     }
 }
 .standfirst {
@@ -419,6 +422,10 @@ form {
     margin: 1.5em 0 0;
     border-top: 4px solid #ddd;
     border-bottom: 2px dotted #ddd;
+
+    @media (max-width: $screen-phone) {
+        @include sr-only;
+    }
 
 
     ol {
