@@ -784,3 +784,13 @@ details {
     }
   }
 }
+
+.reservation-options {
+  @media (max-width: $screen-phone) {
+
+    a {
+      margin-left: 0!important;
+      margin-right: 2em;
+    }
+  }
+}

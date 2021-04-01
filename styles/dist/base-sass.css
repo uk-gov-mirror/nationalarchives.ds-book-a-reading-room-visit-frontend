@@ -8558,5 +8558,11 @@ details summary {
   text-decoration: underline;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .reservation-options a {
+    margin-left: 0 !important;
+    margin-right: 2em;
+  }
+}
 
 /*# sourceMappingURL=base-sass.css.map */
