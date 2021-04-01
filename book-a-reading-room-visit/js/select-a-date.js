@@ -6,7 +6,3 @@ if (window.innerWidth <= 480) {
         item.removeAttribute('open');
     });
 }
-
-
-
-
