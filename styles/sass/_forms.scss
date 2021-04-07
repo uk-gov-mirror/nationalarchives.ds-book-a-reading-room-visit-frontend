@@ -122,18 +122,19 @@ form {
       color: #6f777b;
     }
     .form-error {
-      color: #000;
+      color: #d4351c;
+      font-weight: bold;
       display: block;
-      padding: 3px 7px;
-      background: $yellow-light;
+      padding: 10px 0;
       width: 100%;
       max-width: 480px;
+      font-size: 0.95em;
       span {
         font-size: 1.6em;
       }
     }
     .form-warning {
-      border: 2px solid #EBAB2C;
+      border: 2px solid #d4351c;
     }
     @media (max-width: 768px) {
       max-width: 100%;

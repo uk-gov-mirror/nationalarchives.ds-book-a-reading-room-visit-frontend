@@ -238,10 +238,10 @@
                     </div>
                 </section>
             </div>
-
             <div class="heading">
                 <div class="row">
                     <div class="col-md-12">
+                        <span class="summary-error-message"><h2>Sorry there was a problem.</h2><p>Check the highlighted fields to continue.</p></span>
                         <h2>You are about to provisionally book this visit</h2>
                         <p>Your booking will be confirmed when you submit a document order.</p>
                     </div>
@@ -363,7 +363,8 @@
 
                                     <input data-val="true"
                                            data-val-email="The Email field is not a valid e-mail address." id="Email"
-                                           name="Email" type="text" value=""/>
+                                           name="Email" type="text" value="" class="form-warning"/>
+                                    <span id="email-error" class="form-error">Enter a valid email address</span>
 
                                 </div>
 
@@ -375,9 +376,7 @@
                                     </p>
 
                                     <input id="phone" name="Phone" type="text" value=""/>
-                                    <span id="phone-error" class="emphasis-error"><span
-                                            class="field-validation-valid emphasis-error" data-valmsg-for="phone"
-                                            data-valmsg-replace="true"></span></span>
+                                    <span id="phone-error" class="form-error"></span>
                                 </div>
                             </fieldset>
 

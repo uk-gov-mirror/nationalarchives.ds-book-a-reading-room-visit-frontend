@@ -167,6 +167,7 @@
         <div class="heading align-left">
             <div class="row">
                 <div class="col-md-12">
+                    <span class="summary-error-message"><h2>Sorry there was a problem.</h2><p>Check the highlighted fields to continue.</p></span>
                     <h2>Tell us which documents you would like to see</h2>
                     <p>
                         You have a provisional reservation for a visit to the reading rooms. Complete this form to pre-order original
@@ -263,12 +264,14 @@
     <div class="col-md-3 col-sm-6 col-xs-6">
         <div class="order-form-field">
             <label for="doc-1">1</label>
-            <input id="doc-1" name="doc-1" type="text" />
+            <input class="form-warning" id="doc-1" name="doc-1" type="text" />
+            <span class="form-error">BT 382/1681 - Document is digitised and cannot be ordered. Check the catalogue for more information.</span>
         </div>
 
         <div class="order-form-field">
             <label for="doc-2">2</label>
             <input id="doc-2" name="doc-2" type="text" />
+            <span class="form-error">BT 100/34 - This document is held by another archive and cannot be viewed at The National Archives. Check the catalogue for more information.</span>
         </div>
 
         <div class="order-form-field">
@@ -317,7 +320,8 @@
 
         <div class="order-form-field">
             <label for="doc-12">12</label>
-            <input id="doc-12" name="doc-12" type="text" />
+            <input class="form-warning" id="doc-12" name="doc-12" type="text" />
+            <span class="form-error">FO 371/115905/1092 - This document cannot be identified. Check the catalogue reference has been entered correctly.</span>
         </div>
 
         <div class="order-form-field">
