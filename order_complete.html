@@ -142,6 +142,12 @@
 
     <main class="pb-3 kbs" id="main-content">
         <div class="container">
+            <div class="tna-breadcrumb">
+                <ul>
+                    <li><a href="/">Home</a> &gt;</li>
+                    <li><a href="#">Book a visit to view our documents</a></li>
+                </ul>
+            </div>
 
 <h1 class="display-4">5. Order complete</h1>
 
@@ -165,8 +171,8 @@
         <div class="heading">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="prompt-grey full-width success-panel">
-                        <h2>Your document order has been submitted and your visit is confirmed</h2>
+                    <div class="prompt-grey full-width success-panel extra-margin">
+                        <h2>Your document order has been saved and your visit is confirmed</h2>
                         <p>
                             You can add to or remove documents from this order <span class="bold-text">until Monday 29 March 2021 at 11:59 PM British Summer Time (BST)</span>.
                         </p>
@@ -187,6 +193,10 @@
         <section class="booking-details">
             <div class="row">
                 <div class="col-md-12">
+                    <p>If you provided an email address as part of your booking, you will receive a copy of the final document order on <span class="bold-text">Monday 13 February 2021 at 11.59pm British Summer Time (BST)</span>. If you can’t see this email in your inbox, check your spam and junk email folders.</p>
+
+                        If you did not provide an email address as part of your booking, safely note these booking details for future reference. Return to your booking at this link before <span class="bold-text">Monday 13 February 2021 at 11.59pm British Summer Time (BST)</span>:<br>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.nationalarchives.gov.uk/book-a-reading-room-visit/return-to-booking">https://www.nationalarchives.gov.uk/book-a-reading-room-visit/return-to-booking</a></p>
                     <h2>Your booking details</h2>
                     <table class="table">
                         <tbody>
@@ -195,21 +205,21 @@
                                 <td>RR731-820-2042X</td>
                             </tr>
                             <tr>
+                                <th scope="row">Visit date</th>
+                                <td>Wednesday 07 April 2021<br><a href="#prepare-for-your-visit">See visitor information</a></td>
+                            </tr>
+                            <tr>
                                 <th scope="row">Visit type</th>
                                 <td>
-                                    Standard order visit
+                                    Standard visit
                                 </td>
                             </tr>
                                 <tr>
                                     <th scope="row">Reading room</th>
                                     <td>
-                                       Standard document reading room
+                                        Document reading room <span class="secondary-info">All seats have camera stands</span>
                                     </td>
                                 </tr>
-                            <tr>
-                                <th scope="row">Visit date</th>
-                                <td>Wednesday 07 April 2021</td>
-                            </tr>
                             <tr>
                                 <th scope="row">Seat number</th>
                                 <td>
@@ -226,15 +236,15 @@
                         <input data-val="true" data-val-required="The SeatType field is required." id="SeatType" name="SeatType" type="hidden" value="StdRRSeat" />
                         <input data-val="true" data-val-required="The BookingStartDate field is required." id="BookingStartDate" name="BookingStartDate" type="hidden" value="04/07/2021 00:00:00" />
                         <input id="SeatNumber" name="SeatNumber" type="hidden" value="15D" />
-                        <button type="submit" class="button">Cancel this booking ></button>
+                        <button type="submit" class="button">Cancel this booking</button>
                     </form>
                 </div>
             </div>
         </section>
 
-        <section class="order-summary">
+        <div class="order-summary">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <h3>Your standard order documents</h3>
                     <ol class="document-list">
                         <li>
@@ -258,28 +268,63 @@
                             <p>Kenya land transfer programme: Captain F L Jones…</p>
                         </li>
                     </ol>
+
+                    <h3>Your reserve documents</h3>
+                    <ol class="document-list">
+                        <li>
+                            <p class="bold-text">FCO 141/19497</p>
+                            <p>Kenya land transfer programme: Captain F L Jones…</p>
+                        </li>
+                        <li>
+                            <p class="bold-text">FCO 141/19497</p>
+                            <p>Kenya land transfer programme: Captain F L Jones…</p>
+                        </li>
+                        <li>
+                            <p class="bold-text">FCO 141/19497</p>
+                            <p>Kenya land transfer programme: Captain F L Jones…</p>
+                        </li>
+                    </ol>
                 </div>
-
-                    <section class="col-md-6">
-                        <h3>Your reserve documents</h3>
-                        <ol class="document-list">
-                            <li>
-                                <p class="bold-text">FCO 141/19497</p>
-                                <p>Kenya land transfer programme: Captain F L Jones…</p>
-                            </li>
-                            <li>
-                                <p class="bold-text">FCO 141/19497</p>
-                                <p>Kenya land transfer programme: Captain F L Jones…</p>
-                            </li>
-                            <li>
-                                <p class="bold-text">FCO 141/19497</p>
-                                <p>Kenya land transfer programme: Captain F L Jones…</p>
-                            </li>
-                        </ol>
-                    </section>
-
             </div>
-        </section>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 id="prepare-for-your-visit">Prepare for your visit</h3>
+                    <p>Our building is COVID-19 secure. See our COVID-19 Charter for more:<br>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.nationalarchives.gov.uk/documents/coronavirus-visitor-charter.pdf">https://www.nationalarchives.gov.uk/documents/coronavirus-visitor-charter.pdf</a></p>
+
+                   <p>We have introduced a number of measures to ensure the safety of our visitors and staff. These include:</p>
+
+                    <ul>
+                        <li>One-way systems and capacity controls in frequently used areas</li>
+                        <li>Floor markers and temporary signage to help with social distancing</li>
+                        <li>Rigorous cleaning during and at the end of each day</li>
+                        <li>Easier access to sinks for hand washing and provision of hand sanitiser.</li>
+                    </ul>
+
+                    <p>Watch a video to find out more about what to expect when you visit:<br>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.youtube.com/watch?v=Wm4mq5X_EFs&t=1s">https://www.youtube.com/watch?v=Wm4mq5X_EFs&t=1s</a></p>
+
+                    <p>Our website provides more information about our opening times, how to get here, what you can take into the reading rooms and the facilities that are available during your visit:<br>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.nationalarchives.gov.uk/about/visit-us/">https://www.nationalarchives.gov.uk/about/visit-us/</a></p>
+
+                    <h4>Address</h4>
+
+                    <p>The National Archives,<br>
+                    Kew<br>
+                    Richmond<br>
+                    Surrey<br>
+                    TW9 4DU</p>
+
+                    <p>For sat navs use the postcode TW9 4AD (Bessant Drive).</p>
+
+                    <p>Contact us:<br>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.nationalarchives.gov.uk/contact-us/">https://www.nationalarchives.gov.uk/contact-us/</a></p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

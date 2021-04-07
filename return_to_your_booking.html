@@ -142,6 +142,12 @@
 
     <main class="pb-3 kbs" id="main-content">
         <div class="container">
+            <div class="tna-breadcrumb">
+                <ul>
+                    <li><a href="/">Home</a> &gt;</li>
+                    <li><a href="#">Book a visit to view our documents</a></li>
+                </ul>
+            </div>
 
 <h1 class="display-4">Return to your booking</h1>
 
@@ -153,12 +159,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <span class="summary-error-message"><h2>Sorry there was a problem.</h2><p>Check the highlighted fields to continue.</p></span>
+                    <p>Enter your booking details below to find the document order for your upcoming visit to the reading rooms.</p>
+
                     <p>
-                        If you have already reserved a space, you can use the form below to find your document order form. You will need to complete your document order at least <span class="bold-text">
-                        5 working days before your date of visit</span>. If you do not complete this step your visit will be automatically cancelled.
+                        You will need to complete your document order at least <span class="bold-text">
+                        5 working days before your date of visit</span>.Your visit will be automatically cancelled if you do not complete this step.
                     </p>
                     <p>
-                        You can return to amend or complete your document order at any point before the deadline. Once this date has passed, you can't change your document order as we will begin preparing your order for your visit.
+                        You can return to amend or complete your document order at any point before this deadline. You cannot change your document order once this deadline has passed as we will begin preparing your order for your visit.
                     </p>
                 </div>
             </div>
@@ -174,7 +182,7 @@
                         <fieldset>
                             <label for="reference-number">Enter your booking reference number</label>
                             <p class="helper-text">
-                                This will have been shown on screen when you reserved your space or sent in your confirmation email, e.g. RR811-260-2036X
+                                You can find this in your booking confirmation email. It was also shown on screen when you booked your visit. For example, RR811-260-2036X
                             </p>
 
                             <input id="reference-number" name="bookingReference" type="text" required />
@@ -183,7 +191,7 @@
                         <fieldset>
                             <label for="reader-ticket-number">Enter your reader’s ticket number</label>
                             <p class="helper-text">
-                                This can be found on your reader’s ticket, e.g. 102087
+                                You can find this below the barcode on the back of your reader’s ticket card. If you don't have a reader's ticket card, you can use your temporary ticket number, which starts with ’T’.
                             </p>
 
                             <input id="reader-ticket-number" name="ticket" type="text" required />
