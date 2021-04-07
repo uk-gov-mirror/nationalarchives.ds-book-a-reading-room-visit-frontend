@@ -772,6 +772,21 @@ form {
 
 details {
 
+  @media (min-width: $screen-phone) {
+
+    summary[tabindex='-1'] {
+      color: #000000;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  }
+
   summary {
     color: #134571;
     text-decoration: underline;
@@ -789,7 +804,7 @@ details {
   @media (max-width: $screen-phone) {
 
     a {
-      margin-left: 0!important;
+      margin-left: 0 !important;
       margin-right: 2em;
     }
   }
