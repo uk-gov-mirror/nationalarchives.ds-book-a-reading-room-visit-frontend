@@ -7861,6 +7861,7 @@ a.content-card + .entry-content a.content-card + p a:hover {
 
 main {
   background-color: #fff;
+  min-height: 600px;
 }
 
 @media screen and (max-width: 768px) {

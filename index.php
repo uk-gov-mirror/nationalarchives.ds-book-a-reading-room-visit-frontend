@@ -88,6 +88,7 @@
 <hr>
 <h2>Error examples</h2>
 <ul>
+    <li><span>0</span><a href="error.html">Generic error page</a><br>error.html</li>
     <li><span>1.1</span><a href="return_to_your_booking_(with_errors).html">Return to your booking</a><br>return_to_your_booking_(with_errors).html</li>
     <li><span>3</span><a href="enter_your_details_(with_errors).html">Enter your details</a><br>enter_your_details_(with_errors).html</li>
 
