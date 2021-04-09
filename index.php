@@ -81,9 +81,17 @@
     <li><span>2.2</span><a href="select_a_date_(bulk).html">Select a date (bulk visit)</a><br>select_a_date_(bulk).html</li>
     <li><span>3</span><a href="enter_your_details.html">Enter your details</a><br>enter_your_details.html</li>
     <li><span>4</span><a href="reservation_confirmation.html">Reservation confirmation</a><br>reservation_confirmation.html</li>
+    <ul>
+        <li><span>4.1</span><a href="continue_later.html">Continue later</a><br>continue_later.html</li>
+        <li><span>4.2</span><a href="thank_you.html">Thank you</a><br>thank_you.html</li>
+    </ul>
     <li><span>5.1</span><a href="order_documents_(standard).html">Order documents (standard visit)</a><br>order_documents_(standard).html</li>
     <li><span>5.2</span><a href="order_documents_(bulk).html">Order documents (bulk visit)</a><br>order_documents_(bulk).html</li>
-    <li><span>6</span><a href="order_complete.html">Order complete (standard visit)</a><br>order_complete.html</li>
+    <li><span>6</span><a href="order_complete.html">Order summary</a><br>order_complete.html</li>
+    <ul>
+        <li><span>6.1</span><a href="cancel_your_visit.html">Cancel your visit</a><br>cancel_your_visit.html</li>
+        <li><span>6.2</span><a href="cancel_your_visit_confirmation.html">Cancellation confirmation</a><br>cancel_your_visit_confirmation.html</li>
+    </ul>
 </ul>
 <hr>
 <h2>Error examples</h2>

@@ -140,7 +140,7 @@
 </nav>
 
 
-    <main class="pb-3 kbs" id="main-content">
+    <main class="kbs pb-3" id="main-content">
         <div class="container">
             <div class="tna-breadcrumb">
                 <ul>
@@ -149,63 +149,53 @@
                 </ul>
             </div>
 
-<h1 class="display-4">Return to your booking</h1>
 
-<div class="text-center">
+            <h1 class="display-4">Cancel your visit</h1>
 
-    <div class="container content-wrapper">
+            <div class="text-center">
 
-        <div class="heading align-left">
-            <div class="row">
-                <div class="col-md-12">
-                    <span class="summary-error-message"><h2>There is a problem.</h2><p>Check the highlighted responses below.</p></span>
-                    <p>Enter your booking details below to find the document order for an upcoming visit to the reading rooms.</p>
+                <div class="container content-wrapper">
 
-                    <p>
-                        You will need to complete your document order at least <span class="bold-text">
-                        5 working days before your date of visit</span>. Your visit will be automatically cancelled if you do not complete this step.
-                    </p>
-                    <p>
-                        You can return to amend or complete your document order at any point before this deadline. You cannot change your document order once this deadline has passed as we will begin preparing your order for your visit.
-                    </p>
+                    <div class="heading align-left">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>
+                                    You can cancel your booking any time before your date of visit. If you need to re-book for a different date,
+                                    you will need to cancel your current visit and make a new booking.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cancellation">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="/book-a-reading-room-visit/standard-order-visit/cancellation-confirmation" class="cancellation-form align-left" method="post">
+                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYd4bOeOfge4_JB1BIE5M6bakIRAqM5J99Cmerb4sAus3yFAode1hqz4AisSQKqgL4Gz0NpmAyl_zpBYz7tbp4D89UkrD1AFlA3AU21uKAsckIfhjZlkeW6llEEjmdKYBcA">
+                                    <input id="BookingReference" name="BookingReference" type="hidden" value="RR524-750-3069Z">
+                                    <input data-val="true" data-val-required="The ReaderTicket field is required." id="ReaderTicket" name="ReaderTicket" type="hidden" value="-20879">
+                                    <input id="seattype" name="seattype" type="hidden" value="standard-reading-room">
+                                    <input data-val="true" data-val-required="The BookingStartDate field is required." id="BookingStartDate" name="BookingStartDate" type="hidden" value="04/20/2021 00:00:00">
+                                    <input id="SeatNumber" name="SeatNumber" type="hidden" value="14H">
+                                    <fieldset>
+                                        <legend>Are you sure you want to cancel your visit for Tuesday 20 April 2021?</legend>
+
+                                        <div class="reservation-options">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <button type="submit" class="button">Yes - cancel my visit</button>
+                                                    <a class="button secondary" href="/book-a-reading-room-visit/standard-order-visit/order-documents/-20879/RR524-750-3069Z">No - take me to the order form</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-
-        <div class="rtn-to-booking">
-            <div class="row">
-                <div class="col-md-12 align-left">
-                    <form action="/book-a-reading-room-visit/return-to-booking" class="rtn-to-booking-form" method="post">
-                        <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-</ul></div>
-                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYfowBBB-P0JT3Au9E3Lq597J3-2dAs1oR7G_1WxClO_4KHFXWa0B0SJgfh_xRZ__Ilu_cRagg7ilZsSkSWXBWi9m1lqoCFKKL2-AP-vohUjYd9D51qvG7O8_jhZx4qEYT4" />
-                        <fieldset>
-                            <label for="reference-number">Enter your booking reference number</label>
-                            <p class="helper-text">
-                                You can find this in your booking confirmation email. It was also shown on screen when you booked your visit.<br>
-                                For example, RR811-260-2036X.
-                            </p>
-
-                            <input id="reference-number" name="bookingReference" type="text" required />
-                        </fieldset>
-
-                        <fieldset>
-                            <label for="reader-ticket-number">Enter your reader’s ticket number</label>
-                            <p class="helper-text">
-                                You can find this below the barcode on the back of your reader’s ticket card. If you don't have a reader's ticket card, you can use your temporary ticket number, which starts with ’T’.
-                            </p>
-
-                            <input id="reader-ticket-number" name="ticket" type="text" required />
-                        </fieldset>
-
-                        <button type="submit" class="button">Return to your document order</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
 
         </div>
     </main>

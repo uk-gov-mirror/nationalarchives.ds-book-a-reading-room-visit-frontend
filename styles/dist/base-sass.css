@@ -8708,4 +8708,8 @@ details summary {
   padding: 0.1em 0.1em;
 }
 
+body .kbs .primary {
+  color: #fff !important;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
