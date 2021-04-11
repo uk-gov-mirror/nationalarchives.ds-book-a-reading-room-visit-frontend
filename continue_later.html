@@ -139,8 +139,7 @@
     </div>
 </nav>
 
-
-    <main class="pb-3 kbs" id="main-content">
+    <main class="kbs pb-3" id="main-content">
         <div class="container">
             <div class="tna-breadcrumb">
                 <ul>
@@ -149,63 +148,85 @@
                 </ul>
             </div>
 
-<h1 class="display-4">Return to your booking</h1>
+            <h1 class="display-4">Before you leave</h1>
 
-<div class="text-center">
+            <div class="container content-wrapper">
 
-    <div class="container content-wrapper">
-
-        <div class="heading align-left">
-            <div class="row">
-                <div class="col-md-12">
-                    <span class="summary-error-message"><h2>There is a problem.</h2><p>Check the highlighted responses below.</p></span>
-                    <p>Enter your booking details below to find the document order for an upcoming visit to the reading rooms.</p>
-
-                    <p>
-                        You will need to complete your document order at least <span class="bold-text">
-                        5 working days before your date of visit</span>. Your visit will be automatically cancelled if you do not complete this step.
-                    </p>
-                    <p>
-                        You can return to amend or complete your document order at any point before this deadline. You cannot change your document order once this deadline has passed as we will begin preparing your order for your visit.
-                    </p>
+                <div class="heading">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                You have a provisional booking for:
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="rtn-to-booking">
-            <div class="row">
-                <div class="col-md-12 align-left">
-                    <form action="/book-a-reading-room-visit/return-to-booking" class="rtn-to-booking-form" method="post">
-                        <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-</ul></div>
-                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYfowBBB-P0JT3Au9E3Lq597J3-2dAs1oR7G_1WxClO_4KHFXWa0B0SJgfh_xRZ__Ilu_cRagg7ilZsSkSWXBWi9m1lqoCFKKL2-AP-vohUjYd9D51qvG7O8_jhZx4qEYT4" />
-                        <fieldset>
-                            <label for="reference-number">Enter your booking reference number</label>
-                            <p class="helper-text">
-                                You can find this in your booking confirmation email. It was also shown on screen when you booked your visit.<br>
-                                For example, RR811-260-2036X.
+                <div class="booking-details">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Visit date</th>
+                                    <td>Tuesday 20 April 2021</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Visit type</th>
+                                    <td>
+                                        Standard visit
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Reading room</th>
+                                    <td>Document reading room (All seats have camera stands)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Seat number</th>
+                                    <td>
+                                        14H
+                                        <span class="secondary-info">Based on availability, we may need to change your seat on the date of your visit.</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                If you did not provide an email address as part of your booking, safely note these booking details
+                                or future reference. Return to your booking at this link before <span class="bold-text">Tuesday 13 April 2021 at 11:59 PM British Summer Time (BST)</span>:
+                                <br>
+                                <a target="_blank" rel="noreferrer noopener" href="/book-a-reading-room-visit/return-to-booking">Return to booking form</a>
                             </p>
 
-                            <input id="reference-number" name="bookingReference" type="text" required />
-                        </fieldset>
-
-                        <fieldset>
-                            <label for="reader-ticket-number">Enter your reader’s ticket number</label>
-                            <p class="helper-text">
-                                You can find this below the barcode on the back of your reader’s ticket card. If you don't have a reader's ticket card, you can use your temporary ticket number, which starts with ’T’.
+                            <p>
+                                If you provided an email address as part of your booking, a direct link to this form is also in
+                                your reservation confirmation email, so you can return to your document order at any point before
+                                <span class="bold-text">Tuesday 13 April 2021 at 11:59 PM British Summer Time (BST)</span>. If you
+                                can’t see the reservation confirmation email in your inbox, check your spam and junk email folders.
                             </p>
 
-                            <input id="reader-ticket-number" name="ticket" type="text" required />
-                        </fieldset>
+                            <p>Complete your document order form at any point before the deadline otherwise your visit will be cancelled.</p>
 
-                        <button type="submit" class="button">Return to your document order</button>
-                    </form>
+                            <p class="no-margin">You will need your booking reference and reader's ticket number to return to this booking.</p>
+                        </div>
+                    </div>
+
+                    <div class="reservation-options">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Are you sure you want to continue later?</h2>
+
+                                <a class="button primary" href="/book-a-reading-room-visit/thank-you">Yes, I'd like to continue later</a>
+                                <a class="button secondary" href="/book-a-reading-room-visit/standard-order-visit/order-documents/-20879/RR524-750-3069Z">No, take me to the order form</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-    </div>
-</div>
 
         </div>
     </main>

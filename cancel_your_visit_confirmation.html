@@ -140,7 +140,7 @@
 </nav>
 
 
-    <main class="pb-3 kbs" id="main-content">
+    <main class="kbs pb-3" id="main-content">
         <div class="container">
             <div class="tna-breadcrumb">
                 <ul>
@@ -149,63 +149,52 @@
                 </ul>
             </div>
 
-<h1 class="display-4">Return to your booking</h1>
+            <h1 class="display-4">Your visit has been cancelled</h1>
 
-<div class="text-center">
+            <div class="text-center">
 
-    <div class="container content-wrapper">
+                <div class="container content-wrapper">
 
-        <div class="heading align-left">
-            <div class="row">
-                <div class="col-md-12">
-                    <span class="summary-error-message"><h2>There is a problem.</h2><p>Check the highlighted responses below.</p></span>
-                    <p>Enter your booking details below to find the document order for an upcoming visit to the reading rooms.</p>
+                    <div class="heading align-left">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>
+                                    The following visit has been cancelled
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                    <p>
-                        You will need to complete your document order at least <span class="bold-text">
-                        5 working days before your date of visit</span>. Your visit will be automatically cancelled if you do not complete this step.
-                    </p>
-                    <p>
-                        You can return to amend or complete your document order at any point before this deadline. You cannot change your document order once this deadline has passed as we will begin preparing your order for your visit.
-                    </p>
+                    <div class="cancellation-details no-margin">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">Booking reference</th>
+                                        <td>RR524-750-3069Z</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Reading room</th>
+                                        <td>Document reading room (All seats have camera stands)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Visit date</th>
+                                        <td>Tuesday 20 April 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Seat number</th>
+                                        <td>14H</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <a class="button primary no-margin" href="/book-a-reading-room-visit">Book another visit</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-
-        <div class="rtn-to-booking">
-            <div class="row">
-                <div class="col-md-12 align-left">
-                    <form action="/book-a-reading-room-visit/return-to-booking" class="rtn-to-booking-form" method="post">
-                        <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-</ul></div>
-                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYfowBBB-P0JT3Au9E3Lq597J3-2dAs1oR7G_1WxClO_4KHFXWa0B0SJgfh_xRZ__Ilu_cRagg7ilZsSkSWXBWi9m1lqoCFKKL2-AP-vohUjYd9D51qvG7O8_jhZx4qEYT4" />
-                        <fieldset>
-                            <label for="reference-number">Enter your booking reference number</label>
-                            <p class="helper-text">
-                                You can find this in your booking confirmation email. It was also shown on screen when you booked your visit.<br>
-                                For example, RR811-260-2036X.
-                            </p>
-
-                            <input id="reference-number" name="bookingReference" type="text" required />
-                        </fieldset>
-
-                        <fieldset>
-                            <label for="reader-ticket-number">Enter your reader’s ticket number</label>
-                            <p class="helper-text">
-                                You can find this below the barcode on the back of your reader’s ticket card. If you don't have a reader's ticket card, you can use your temporary ticket number, which starts with ’T’.
-                            </p>
-
-                            <input id="reader-ticket-number" name="ticket" type="text" required />
-                        </fieldset>
-
-                        <button type="submit" class="button">Return to your document order</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
 
         </div>
     </main>

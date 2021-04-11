@@ -216,6 +216,12 @@
 
 <main class="pb-3 kbs" id="main-content">
     <div class="container">
+        <div class="tna-breadcrumb">
+            <ul>
+                <li><a href="/">Home</a> &gt;</li>
+                <li><a href="/book-a-reading-room-visit">Book a visit to view our documents</a></li>
+            </ul>
+        </div>
 
 
         <h1 class="display-4">4. Order documents for your visit</h1>
@@ -234,7 +240,7 @@
                             </li>
                             <li aria-current="page" class="active"><span class="step-number">4</span> <span
                                     class="step">Order documents</span></li>
-                            <li><span class="step-number">5</span> <span class="step">Order complete</span></li>
+                            <li><span class="step-number">5</span> <span class="step">Order summary</span></li>
                         </ol>
                     </div>
                 </section>
@@ -244,23 +250,17 @@
                         <div class="col-md-12">
                             <h2>Tell us which documents you would like to see</h2>
                             <p>
-                                You have a provisional reservation for a visit to the reading rooms. Complete this form
-                                to pre-order original
-                                documents held by The National Archives.
+                                You have a provisional reservation for a visit to the reading rooms. Complete this form to order original documents held by The National Archives.
                             </p>
-                            <p>
-                                If you do not complete this step by <span class="bold-text">Monday 29 March 2021 at 11:59 PM British Summer Time (BST)</span>.
-                                your visit will be automatically cancelled.
-                                A direct link to this form is also in your confirmation email, so you can return to
-                                amend or complete your
-                                document order at any point before <span class="bold-text">Monday 29 March 2021 at 11:59 PM British Summer Time (BST)</span>.
-                                Check your spam and junk email folders.
-                            </p>
-                            <p>
-                                Once this date has passed, you can't change your document order as we will begin
-                                preparing your order for your
-                                visit.
-                            </p>
+
+                            <p>If you do not complete this step by <span class="bold-text">Monday 29 March 2021 at 11:59 PM British Summer Time (BST)</span> your visit will be automatically cancelled.</p>
+
+                            <p>If you provided an email address as part of your booking, a direct link to this form is also in your reservation confirmation email, so you can return to edit or cancel your document order at any point before <span class="bold-text">Monday 29 March 2021 at 11:59 PM British Summer Time (BST)</span>. If you cannot see the reservation confirmation email in your inbox, check your spam and junk email folders.</p>
+
+                            <p>If you did not provide an email address as part of your booking, you can return to your booking before the deadline at this link:<br>
+                                <a target="_blank" rel="noreferrer noopener" href="/book-a-reading-room-visit/return-to-booking">https://www.nationalarchives.gov.uk/book-a-reading-room-visit/return-to-booking</a></p>
+
+                            <p>Once this date has passed, you cannot change your document order as we will begin preparing your order for your visit.</p>
                         </div>
                     </div>
                 </div>
@@ -276,20 +276,24 @@
                                     <td>RR731-820-2042X</td>
                                 </tr>
                                 <tr>
+                                    <th scope="row">Reader's ticket number</th>
+                                    <td>999888</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Visit date</th>
+                                    <td>Wednesday 07 April 2021</td>
+                                </tr>
+                                <tr>
                                     <th scope="row">Visit type</th>
                                     <td>
-                                       Standard order visit
+                                       Standard visit
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Reading room</th>
                                     <td>
-                                        Standard document reading room
+                                        Document reading room <span class="secondary-info">All seats have camera stands.</span>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Visit date</th>
-                                    <td>Wednesday 07 April 2021</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Seat number</th>
@@ -313,12 +317,11 @@
                                        id="BookingStartDate" name="BookingStartDate" type="hidden"
                                        value="04/07/2021 00:00:00"/>
                                 <input id="SeatNumber" name="SeatNumber" type="hidden" value="15D"/>
-                                <button type="submit" class="button">Cancel this booking ></button>
+                                <button type="submit" class="button">Cancel your visit</button>
                             </form>
                         </div>
                     </div>
                 </div>
-
                 <div class="prompt-grey full-width warning-panel">
                     <p class="no-margin">
                         You can add to or remove documents from this order <span class="bold-text">until Monday 29 March 2021 at 11:59 PM British Summer Time (BST)</span>.
@@ -334,11 +337,10 @@
                                 <input name="__RequestVerificationToken" type="hidden"
                                        value="CfDJ8Fm9gkvp_CNDnCItEvXaYYeiz3lk7jOA5OnTqmVf00Y8IcTkydRymAIHuvWHEHxN_07Z7JKwBqLNjH5LcDJT8ThNOzpVCFFyI8H35kw_gRuvuCJw42KPQukc_wG_mHPRRZIst0bBaQ5fkd327c4iamY"/>
                                 <fieldset>
-                                    <legend>Enter up to 12 documents (e.g. FO 371/114865)</legend>
-                                    <p class="helper-text no-margin">You can order between 1 and 12 documents.</p>
-                                    <p class="helper-text">Search the catalogue and note document references, and then
-                                        enter the references in the order fields below.</p>
-
+                                    <legend>Enter up to 12 full catalogue references</legend>
+                                    <p class="helper-text">Documents can be from multiple series, for example ADM 22 and C 142.<br>
+                                        <a target="_blank" rel="noreferrer noopener" href="https://discovery.nationalarchives.gov.uk/">Search our catalogue to find catalogue references.</a></p>
+                                    <p><span class="warning">You need to add at least 1 more document before the deadline to avoid your order being cancelled.</span></p>
                                     <div class="col-md-3 col-sm-6 col-xs-6">
                                         <div class="order-form-field">
                                             <label for="doc-1">1</label>
@@ -409,8 +411,8 @@
                                 </fieldset>
 
                                 <fieldset>
-                                    <legend>Enter up to 3 reserve documents (e.g. FO 371/114865)</legend>
-                                    <p class="helper-text">You can provide three reserve catalogue references in case
+                                    <legend>Enter up to 3 reserve catalogue references</legend>
+                                    <p class="helper-text">You can provide 3 reserve catalogue references in case
                                         your first choices are unavailable.</p>
 
                                     <div class="col-md-3 col-sm-6 col-xs-6">
@@ -436,13 +438,14 @@
                                             requests</label>
                                     </legend>
 
-                                    <p class="helper-text">This should reflect the specific additional services we
-                                        accomodate</p>
+                                    <p class="helper-text">Tell us about your access needs, including if you have mobility access requirements. You can also use this space to tell us your research requests, including library materials, microfilm/microfiche, or finding/preservation aids that are normally available on self-service.</p>
+
+                                    <p class="helper-text">We cannot guarantee that all of the research materials you request will be available.</p>
 
                                     <textarea id="additional-reqs" name="additional-reqs"></textarea>
                                 </fieldset>
 
-                                <button class="button" type="submit">Add these to your order</button>
+                                <button class="button" type="submit">Save and review</button>
                             </form>
                         </div>
                     </div>
