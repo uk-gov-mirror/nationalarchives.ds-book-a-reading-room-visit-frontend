@@ -7888,7 +7888,7 @@ a.button {
   min-height: 600px;
   background-color: #fff;
   margin-top: 0em;
-  padding: 0em 0 10em 0;
+  padding: 0em 0 2em 0;
 }
 .content-wrapper .heading {
   margin-top: 1.5em;
@@ -8656,8 +8656,7 @@ details summary {
   margin-bottom: 2em;
 }
 .kbs .optional-container legend {
-  font-size: 1.25em !important;
-  margin-bottom: 1.2em;
+  font-size: 1.3em !important;
 }
 
 .extra-margin {
@@ -8710,6 +8709,32 @@ details summary {
 
 body .kbs .primary {
   color: #fff !important;
+}
+
+.contact-footer {
+  margin: 3em 0;
+  border-top: 3px dotted #ddd;
+  padding: 2em;
+}
+@media screen and (min-width: 768px) {
+  .contact-footer div {
+    border-right: 2px dotted #ddd;
+  }
+  .contact-footer div:last-child {
+    border-right: 0;
+  }
+}
+.contact-footer h2 {
+  margin-top: 3em;
+  font-size: 1em !important;
+}
+@media screen and (min-width: 768px) {
+  .contact-footer h2 {
+    margin: 0;
+  }
+}
+.contact-footer p {
+  margin: 2em 0 0.3em !important;
 }
 
 /*# sourceMappingURL=base-sass.css.map */
