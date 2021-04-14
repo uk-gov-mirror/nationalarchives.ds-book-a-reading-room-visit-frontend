@@ -8737,4 +8737,13 @@ body .kbs .primary {
   margin: 2em 0 0.3em !important;
 }
 
+.secondary-button {
+  background: #fff !important;
+  color: #134571 !important;
+  text-decoration: underline !important;
+  padding: 0 !important;
+  font-size: 1em !important;
+  margin-top: 0 !important;
+}
+
 /*# sourceMappingURL=base-sass.css.map */
