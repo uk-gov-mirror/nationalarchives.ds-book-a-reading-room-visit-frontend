@@ -18,7 +18,11 @@
         }
         h2 {
             font-size: 1.1em;
-            margin: 1em 0 0.5em;
+            margin: 2em 0 0.5em;
+        }
+        a, a:visited {
+            font-weight: bold;
+            color: #134571;
         }
         .standfirst {
             font-family: 'Roboto Mono', serif;
@@ -40,7 +44,7 @@
         li:last-of-type {
             border-bottom: 0;
         }
-        a, a:visited {
+        li a, li a:visited {
             font-size: 1.4em;
             font-weight: bold;
             color: #134571;
@@ -62,7 +66,7 @@
 
         }
         hr {
-            margin: 0.5em 0 0.5em;
+            margin: 2em 0 0.5em;
             border: 2px solid #ccc;
         }
     </style>
@@ -99,7 +103,18 @@
     <li><span>0</span><a href="error.html">Generic error page</a><br>error.html</li>
     <li><span>1.1</span><a href="return_to_your_booking_(with_errors).html">Return to your booking</a><br>return_to_your_booking_(with_errors).html</li>
     <li><span>3</span><a href="enter_your_details_(with_errors).html">Enter your details</a><br>enter_your_details_(with_errors).html</li>
-
+</ul>
+<hr>
+<h2>Emails</h2>
+<p>These should be converted to an email-friendly version before integrating using the <a href="https://templates.mailchimp.com/resources/inline-css/">Mailchimp CSS inliner tool</a>. They should then be saved in the 'emails/converted'.</p>
+<ul>
+    <li><span>1</span><a href="emails/src/reservation_confirmation.html">Provisional booking confirmation</a><br>Sent to customer after completing 'Enter your details'</a></li>
+    <li><span>2</span><a href="emails/src/booking_confirmation.html">Booking confirmation</a><br>Sent to customer once deadline for ordering documents has passed.</li>
+    <li><span>3</span><a href="emails/src/dsd_booking_confirmation.html">DSD booking confirmation</a><br>Sent to DSD once deadline for ordering documents has passed.</li>
+    <li><span>4</span><a href="emails/src/booking_cancellation.html">Booking cancellation (manual)</a><br>Sent to customer if DSD or customer cancels booking.</li>
+    <li><span>5</span><a href="emails/src/automatic_cancellation.html">Booking cancellation (automatic)</a><br>Sent to customer if the booking is automatically cancelled.</li>
+    <li><span>6</span><a href="emails/src/valid_order_reminder.html">Valid order reminder</a><br>Sent to customer 2 days before the document ordering deadline for valid orders.</li>
+    <li><span>7</span><a href="emails/src/invalid_order_reminder.html">Invalid order reminder</a><br>Sent to customer 2 days before the document ordering deadline for invalid orders.</li>
 </ul>
 
 </body>
