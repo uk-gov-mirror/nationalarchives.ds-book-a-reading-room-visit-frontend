@@ -140,7 +140,7 @@
 </nav>
 
 
-    <main class="pb-3 kbs" id="main-content">
+    <main class="pb-3 kbs order-summary" id="main-content">
         <div class="container">
             <div class="tna-breadcrumb">
                 <ul>
@@ -149,13 +149,13 @@
                 </ul>
             </div>
 
-<h1 class="display-4">5. Order summary</h1>
+<h1 class="display-4"><span class="no-print">5. </span>Order summary</h1>
 
 <div>
 
     <div class="container content-wrapper">
 
-        <section class="row" id="progress-bar">
+        <section class="row no-print" id="progress-bar">
             <h2 class="sr-only">Progress</h2>
             <div class="col-md-12">
                 <ol>
@@ -199,7 +199,7 @@
                     <p>You can add to or remove catalogue references from your document order at any time before the document order deadline.</p>
                     <a class="button" href="/book-a-reading-room-visit/standard-order-visit/order-documents/999/RR731-820-2042X">Edit your document order</a>
 
-                    <h2>After the document order deadline</h2>
+                    <h2 class="break-before">After the document order deadline</h2>
                     <p>If you have added the minimum number of documents required to your document order, we will send you a booking confirmation email once the document order deadline has passed. If you cannot see this email in your inbox, check your spam and junk email folders.</p>
                     <p>We will then begin preparing your documents.</p>
                     <p>If you haven’t added the minimum number of documents required to your document order, your visit to the reading rooms will be cancelled and we will send you a cancellation email.</p>
@@ -272,7 +272,7 @@
         <div class="order-summary">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Your standard order</h2>
+                    <h2 class="break-before">Your standard order</h2>
                     <p>We will contact you if a large number of the documents you want to order become unavailable for the date of your visit.</p>
                     <ol class="document-list">
                         <li>
@@ -312,8 +312,10 @@
                             Kenya land transfer programme: Captain F L Jones…
                         </li>
                     </ol>
-                    <a class="button" href="#">Print this page</a>
-                    <h2 id="prepare-for-your-visit">Prepare for your visit</h2>
+                    <a class="button" href="#">Print your document order</a>
+
+                    <h2 id="prepare-for-your-visit" class="break-before">Prepare for your visit</h2>
+
                     <p>Find out about:</p>
 
                     <ul>
@@ -341,20 +343,22 @@
                     <p>Remember to wear a face mask when you visit, unless you have a valid exemption:<br>
                         <a target="_blank" rel="noreferrer noopener" href="https://www.gov.uk/government/publications/face-coverings-when-to-wear-one-and-how-to-make-your-own/face-coverings-when-to-wear-one-and-how-to-make-your-own#exemptions">https://www.gov.uk/government/publications/face-coverings-when-to-wear-one-and-how-to-make-your-own/face-coverings-when-to-wear-one-and-how-to-make-your-own#exemptions</a></p>
                     <h2>Can I cancel my visit?</h2>
-                    <p>You can cancel your visit at any time.</p>
-                    <form action="/book-a-reading-room-visit/standard-order-visit/cancel-booking" method="post">
-                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYdXD6d9rSpFgbDtLP16m7un0K1Ma7buhzoHx5Bb7-2-lxIaRQThxItxhwqMNRC12MTPyhZ47Mq1zBenWXGItup5rDItgQUkmt8f_73gJ-JkVbpdLzy4V2VdI3H9S4XUO8E" />
-                        <input id="BookingReference" name="BookingReference" type="hidden" value="RR731-820-2042X" />
-                        <input data-val="true" data-val-required="The ReaderTicket field is required." id="ReaderTicket" name="ReaderTicket" type="hidden" value="999" />
-                        <input data-val="true" data-val-required="The SeatType field is required." id="SeatType" name="SeatType" type="hidden" value="StdRRSeat" />
-                        <input data-val="true" data-val-required="The BookingStartDate field is required." id="BookingStartDate" name="BookingStartDate" type="hidden" value="04/07/2021 00:00:00" />
-                        <input id="SeatNumber" name="SeatNumber" type="hidden" value="15D" />
-                        <button type="submit" class="button">Cancel your visit</button>
-                    </form>
-                    <h2>Leave this page</h2>
-                    <p>You can close your browser or continue your research journey using Discovery, our catalogue: <br>
-                        <a target="_blank" rel="noreferrer noopener" href="https://discovery.nationalarchives.gov.uk/ ">https://discovery.nationalarchives.gov.uk/</a>
-                    </p>
+                    <p>You can cancel your visit at anytime.</p>
+                    <div class="no-print">
+                        <form action="/book-a-reading-room-visit/standard-order-visit/cancel-booking" method="post">
+                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYdXD6d9rSpFgbDtLP16m7un0K1Ma7buhzoHx5Bb7-2-lxIaRQThxItxhwqMNRC12MTPyhZ47Mq1zBenWXGItup5rDItgQUkmt8f_73gJ-JkVbpdLzy4V2VdI3H9S4XUO8E" />
+                            <input id="BookingReference" name="BookingReference" type="hidden" value="RR731-820-2042X" />
+                            <input data-val="true" data-val-required="The ReaderTicket field is required." id="ReaderTicket" name="ReaderTicket" type="hidden" value="999" />
+                            <input data-val="true" data-val-required="The SeatType field is required." id="SeatType" name="SeatType" type="hidden" value="StdRRSeat" />
+                            <input data-val="true" data-val-required="The BookingStartDate field is required." id="BookingStartDate" name="BookingStartDate" type="hidden" value="04/07/2021 00:00:00" />
+                            <input id="SeatNumber" name="SeatNumber" type="hidden" value="15D" />
+                            <button type="submit" class="button">Cancel your visit</button>
+                        </form>
+                        <h2>Leave this page</h2>
+                        <p>You can close your browser or continue your research journey using Discovery, our catalogue: <br>
+                            <a target="_blank" rel="noreferrer noopener" href="https://discovery.nationalarchives.gov.uk/ ">https://discovery.nationalarchives.gov.uk/</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
