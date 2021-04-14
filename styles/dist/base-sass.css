@@ -5837,6 +5837,7 @@ body .kbs a, body .kbs a:active, body .kbs a:visited {
   color: #134571;
   text-decoration: underline;
   font-weight: bold;
+  word-break: break-word;
 }
 body .kbs a:focus {
   outline: 5px solid #1d70b8;
@@ -8003,7 +8004,7 @@ form input[type=checkbox] {
 }
 
 .document-list {
-  margin: 2em 0 4em 0;
+  margin: 2em 0 1em 0;
   padding-left: 1em;
 }
 .document-list li {
