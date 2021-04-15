@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Secure booking</title>
+    <title>Your details - standard booking - The National Archives</title>
 
     <script>document.getElementsByTagName("html")[0].className = "js";</script>
 
@@ -30,6 +30,17 @@
     <!-- End Google Tag Manager -->
 </head>
 <body>
+<div class="notification-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="notice">
+                    <strong class="title">BETA</strong>
+                    <p>This is a new service – your <a target="_blank" rel="noreferrer noopener" href="https://www.smartsurvey.co.uk/s/readingroomvisitbooking/">feedback</a> will help us to improve it.</a></p></div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Google Tag Manager (noscript) -->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8DSWV"
@@ -236,7 +247,7 @@
                             <li><span class="step-number">1</span> <span class="step">Select a date</span></li>
                             <li aria-current="page" class="active"><span class="step-number">2</span> <span
                                     class="step">Enter your details</span></li>
-                            <li><span class="step-number">3</span> <span class="step">Reservation confirmation</span>
+                            <li><span class="step-number">3</span> <span class="step">Your visit details</span>
                             </li>
                             <li><span class="step-number">4</span> <span class="step">Order documents</span></li>
                             <li><span class="step-number">5</span> <span class="step">Order summary</span></li>
@@ -280,8 +291,7 @@
             </div>
 
             <p class="no-margin">
-                Once you choose a date and make a provisional booking, you will not be able to change your visit date
-                unless you cancel your existing booking.
+                Once you complete this step, you will not be able to change the date of your visit unless you cancel it first.
             </p>
             <form class="margin-bottom" action="/book-a-reading-room-visit/bulk-order-visit/cancel-provision"
                   method="post">
@@ -297,7 +307,7 @@
 
                     <div class="prompt-grey full-width warning-panel" id="enter-your-details-timer">
                         <h3>You have 20 minutes to enter your details.</h3>
-                        <span id="timer">Complete this page by 03:50 PM British Summer Time (BST).</span>
+                        <span id="timer">Complete this page by 3:50pm British Summer Time (BST).</span>
                         <small>If you do not complete the form by this time we will cancel your seat and you will need
                             to start the process again.
                         </small>
@@ -359,14 +369,13 @@
                             <div class="optional-container">
                                 <fieldset>
                                     <legend>Enter your email address or telephone number so we can contact
-                                        you.
+                                        you
                                     </legend>
 
                                     <div class="form-row">
                                         <label for="email" class="mt-lg">Email address</label>
                                         <p class="helper-text">
-                                            We will use this to send you a booking confirmation email with a link to your
-                                            document order form and a reminder email before your visit.
+                                            We will use this to send you (1) a booking confirmation email about your document order and (2) a reminder email before your visit.
                                         </p>
 
                                         <input data-val="true"
@@ -394,14 +403,14 @@
                                     <input data-val="true" data-val-required="The AcceptTsAndCs field is required."
                                            id="terms-conditions" name="AcceptTsAndCs" required="True" type="checkbox"
                                            value="true"/>
-                                    <label for="terms-conditions" class="reduce-text">Accept our <a target="_blank" rel="noreferrer noopener" href="http://www.nationalarchives.gov.uk/legal/">terms of use</a> and <a target="_blank" rel="noreferrer noopener" href="https://www.nationalarchives.gov.uk/legal/privacy-policy/">privacy policy</a></label>
+                                    <label for="terms-conditions" class="reduce-text">Accept our <a target="_blank" rel="noreferrer noopener" href="https://www.nationalarchives.gov.uk/legal/booking-events/">terms of use</a> and <a target="_blank" rel="noreferrer noopener" href="https://www.nationalarchives.gov.uk/legal/privacy-policy/">privacy policy</a>.</label>
                                 </div>
 
                                 <div class="form-row checkbox">
                                     <input data-val="true" data-val-required="The AcceptCovidCharter field is required."
                                            id="covid-charter" name="AcceptCovidCharter" required="True" type="checkbox"
                                            value="true"/>
-                                    <label for="covid-charter" class="reduce-text">Accept our <a target="_blank" rel="noreferrer noopener" href="https://www.nationalarchives.gov.uk/documents/coronavirus-visitor-charter.pdf">COVID-19 Visitor Charter</a> (PDF)</label>
+                                    <label for="covid-charter" class="reduce-text">Accept our <a target="_blank" rel="noreferrer noopener" href="https://www.nationalarchives.gov.uk/documents/coronavirus-visitor-charter.pdf">COVID-19 Visitor Charter</a>. (PDF)</label>
                                 </div>
 
                                 <div class="form-row checkbox">
@@ -409,7 +418,7 @@
                                            id="face-covering" name="NoFaceCovering" type="checkbox" value="true"/>
                                     <label for="face-covering" class="reduce-text">
                                         I have a legitimate reason to <a target="_blank" rel="noreferrer noopener" href="https://www.gov.uk/government/publications/face-coverings-when-to-wear-one-and-how-to-make-your-own/face-coverings-when-to-wear-one-and-how-to-make-your-own#exemptions">not wear a face covering</a>.
-                                        This information won’t be shared with the NHS Test and Trace service.
+                                        <br>This information will only be used when you visit and will not be shared with the NHS Test and Trace service.
                                     </label>
                                 </div>
                             </fieldset>
@@ -429,7 +438,18 @@
     </div>
     </div>
 </main>
-
+<section class="contact-footer">
+    <div class="row">
+        <div class="col-md-6 first">
+            <h2>Need help with this service?</h2>
+            <a target="_blank" rel="noreferrer noopener" href="https://www.nationalarchives.gov.uk/contact-us/">Contact us</a>
+        </div>
+        <div class="col-md-6">
+            <h2>What do you think of this service?</h2>
+            <a target="_blank" rel="noreferrer noopener" href="https://www.smartsurvey.co.uk/s/readingroomvisitbooking/">Take our survey</a>
+        </div>
+    </div>
+</section>
 <footer id="footer">
     <h2 class="sr-only">Footer</h2>
     <div class="newsletter">
