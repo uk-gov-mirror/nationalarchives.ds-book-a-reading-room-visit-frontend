@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body style="font-family:Arial;font-size:16px">
+<p>
+    Dear [name],
+</p>
+
+<p>
+    You have made a reservation to visit the reading rooms at The National Archives on [visit date].
+</p>
+
+<p>
+    To confirm your booking, tell us which documents you want to view during your visit. If you haven’t already done so, follow this link: <xsl:value-of select="ReturnURL"></xsl:value-of>.
+    You will need your booking reference and reader's ticket number to complete this step.
+</p>
+
+<p>
+    If you do not complete this step by [date] British Summer Time (BST), your <b>reservation will be automatically cancelled.</b>
+</p>
+
+<p>You can ignore this step if you have already completed your document order but you can return and edit your order as many times as you’d like before the deadline above.</p>
+
+<h3 style="margin-top: 2em;">Your booking summary </h3>
+<p>
+    Your booking reference is: [booking reference]</p>
+<p>Your Reader’s ticket number is: [reader's ticket number]
+</p>
+<table style="text-align: left;border: 1px solid #999;border-collapse: collapse;">
+    <tbody>
+    <tr>
+        <th style="padding: 1em;border: 1px solid #999;width: 150px;vertical-align: top;">Visit type</th>
+        <td style="padding: 1em;border: 1px solid #999;vertical-align: top;">
+            [visit type]
+        </td>
+    </tr>
+    <tr>
+        <th style="padding: 1em;border: 1px solid #999;width: 150px;vertical-align: top;">Visit date</th>
+        <td style="padding: 1em;border: 1px solid #999;vertical-align: top;">
+            [visit date]
+        </td>
+    </tr>
+
+    <tr>
+        <th style="padding: 1em;border: 1px solid #999;width: 150px;vertical-align: top;">Reading room</th>
+        <td style="padding: 1em;border: 1px solid #999;vertical-align: top;">
+            Document reading room
+        </td>
+    </tr>
+
+    <tr>
+        <th style="padding: 1em;border: 1px solid #999;width: 150px;vertical-align: top;">Seat number</th>
+        <td style="padding: 1em;border: 1px solid #999;vertical-align: top;">
+            15D<br>
+            <span>Based on availability, we may need to change your seat on the date of your visit.</span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<p>Use Discovery, our online catalogue, to gather your booking references: http://discovery.nationalarchives.gov.uk/ </p>
+<h3 style="margin-top: 2em;">Cancel your visit</h3>
+<p>
+    You can cancel your visit at any time. Use this link: [URL]
+</p>
+
+<h3 style="margin-top: 2em;">Need help?</h3>
+<p>This email inbox is not being monitored. Contact us if you need help with this service: https://www.nationalarchives.gov.uk/contact-us/</p>
+</body>
+</html>
