@@ -10,7 +10,7 @@
         body {
             font-family: 'Open Sans', serif;
             font-size: 1.1em;
-            padding: 2em;
+            padding: 3em 0.5em;
         }
         h1 {
             font-size: 1.5em;
@@ -18,7 +18,15 @@
         }
         h2 {
             font-size: 1.1em;
-            margin: 1em 0 0.5em;
+            margin: 4em 0 0.5em;
+        }
+        a, a:visited {
+            font-weight: bold;
+            color: #134571;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .standfirst {
             font-family: 'Roboto Mono', serif;
@@ -29,18 +37,19 @@
 
         }
         li {
-            padding: 0.7em;
+            padding: 1.2em;
+            background-color: #efefef;
             display: block;
-            border-bottom: 1px dotted #ccc;
+            border: 1px solid #ccc;
             list-style-position: outside;
             list-style-type: square;
             font-size: 0.8em;
             color: #666;
+            border-left: 6px solid #134571;
+            margin-bottom: 4px;
         }
-        li:last-of-type {
-            border-bottom: 0;
-        }
-        a, a:visited {
+
+        li a, li a:visited {
             font-size: 1.4em;
             font-weight: bold;
             color: #134571;
@@ -53,24 +62,37 @@
             color: #222;
         }
         ul ul {
-            margin: 0;
+
         }
         ul ul li {
             padding: 1em 0 1.5em 4.5em;
-            background: #efefef;
             font-size: 0.7em;
+            border-top: 0;
+            border-right: 1px solid #ccc;
+            border-left: 6px solid #ccc;
+            background-color: #fff;
+            margin-top: -4px;
+
 
         }
         hr {
-            margin: 0.5em 0 0.5em;
-            border: 2px solid #ccc;
+            margin: 3em 0 0.5em;
+            border-bottom: 4px solid #999;
+            height: 0;
+            display: block;
+
+        }
+        @media screen and (min-width: 768px) {
+            body {
+                padding: 2em;
+            }
         }
     </style>
 </head>
 <body>
 <h1>Static HTML for Kew Booking Service</h1>
 <p class="standfirst">This is a collection of HTML templates for front-end development of the KBS user interface.</p>
-<hr>
+
 <h2>Page templates</h2>
 <ul>
     <li><span>1</span><a href="service_homepage.html">Service homepage</a><br>service_homepage.html</li>
@@ -93,13 +115,24 @@
         <li><span>6.2</span><a href="cancel_your_visit_confirmation.html">Cancellation confirmation</a><br>cancel_your_visit_confirmation.html</li>
     </ul>
 </ul>
-<hr>
+
 <h2>Error examples</h2>
 <ul>
     <li><span>0</span><a href="error.html">Generic error page</a><br>error.html</li>
     <li><span>1.1</span><a href="return_to_your_booking_(with_errors).html">Return to your booking</a><br>return_to_your_booking_(with_errors).html</li>
     <li><span>3</span><a href="enter_your_details_(with_errors).html">Enter your details</a><br>enter_your_details_(with_errors).html</li>
+</ul>
 
+<h2>Emails</h2>
+<p>These should be converted to an email-friendly version before integrating using the <a href="https://templates.mailchimp.com/resources/inline-css/">Mailchimp CSS inliner tool</a>. They should then be saved in the 'emails/converted'.</p>
+<ul>
+    <li><span>1</span><a href="emails/src/reservation_confirmation.html">Provisional booking confirmation</a><br>Sent to customer after completing 'Enter your details'</a></li>
+    <li><span>2</span><a href="emails/src/booking_confirmation.html">Booking confirmation</a><br>Sent to customer once deadline for ordering documents has passed.</li>
+    <li><span>3</span><a href="emails/src/dsd_booking_confirmation.html">DSD booking confirmation</a><br>Sent to DSD once deadline for ordering documents has passed.</li>
+    <li><span>4</span><a href="emails/src/booking_cancellation.html">Booking cancellation (manual)</a><br>Sent to customer if DSD or customer cancels booking.</li>
+    <li><span>5</span><a href="emails/src/automatic_cancellation.html">Booking cancellation (automatic)</a><br>Sent to customer if the booking is automatically cancelled.</li>
+    <li><span>6</span><a href="emails/src/valid_order_reminder.html">Valid order reminder</a><br>Sent to customer 2 days before the document ordering deadline for valid orders.</li>
+    <li><span>7</span><a href="emails/src/invalid_order_reminder.html">Invalid order reminder</a><br>Sent to customer 2 days before the document ordering deadline for invalid orders.</li>
 </ul>
 
 </body>
