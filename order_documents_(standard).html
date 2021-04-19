@@ -1,46 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
     <title>Order documents - standard booking - The National Archives</title>
 
     <script>document.getElementsByTagName("html")[0].className = "js";</script>
 
-    <link rel='stylesheet' id='tna-parent-styles-css' href='/styles/dist/base-sass.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='tna-parent-styles-css' href='/styles/compiled-css/base-sass.min.css' type='text/css' media='all' />
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
 
+    <link rel="shortcut icon" type="image/x-icon" href="/book-a-reading-room-visit/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/book-a-reading-room-visit/images/favicon.png">
+
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-T8DSWV');</script>
+    <script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-T8DSWV');</script>
     <!-- End Google Tag Manager -->
 </head>
 <body>
-<div class="notification-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="notice">
-                    <strong class="title">BETA</strong>
-                    <p>This is a new service – your <a target="_blank" rel="noreferrer noopener" href="https://www.smartsurvey.co.uk/s/readingroomvisitbooking/">feedback</a> will help us to improve it.</a></p></div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- Google Tag Manager (noscript) -->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8DSWV"
@@ -48,6 +38,18 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<div class="notification-banner no-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="notice">
+                    <strong class="title">BETA</strong>
+                    <p>This is a new service – your <a target="_blank" rel="noreferrer noopener" href="https://www.smartsurvey.co.uk/s/readingroomvisitbooking/">feedback</a> will help us to improve it.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <header id="header">
     <a id="skip-to-main-content" href="#main-content">Skip to Main Content</a>
     <div class="container">
@@ -56,8 +58,7 @@
                 <button aria-label="Toggle menu" id="mega-menu-mobile"></button>
                 <a href="https://dev-www.nationalarchives.gov.uk" title="Go to The National Archives homepage"
                    class="visible-lg visible-md visible-sm">
-                    <img src="/book-a-reading-room-visit/images/logo-white.png" alt="The National Archives"
-                         class="img-responsive logo"/>
+                    <img src="/book-a-reading-room-visit/images/logo-white.png" alt="The National Archives" class="img-responsive logo" />
                 </a>
             </div>
             <div class="col-xs-8 col-sm-2" id="mobile-logo-holder">
@@ -65,10 +66,9 @@
                         class="hidden-xs">
                     <span>Menu</span>
                 </button>
-                <a href="https://www.nationalarchives.gov.uk" title="Go to The National Archives homepage"
+                <a href="https://dev-www.nationalarchives.gov.uk" title="Go to The National Archives homepage"
                    class="hidden-lg hidden-md hidden-sm">
-                    <img src="/book-a-reading-room-visit/images/logo-white.png" alt="The National Archives"
-                         class="img-responsive"/>
+                    <img src="/book-a-reading-room-visit/images/logo-white.png" alt="The National Archives" class="img-responsive" />
                 </a>
             </div>
         </div>
@@ -79,133 +79,68 @@
     <div class="mega-menu clearfix">
         <ul class="main-ul">
             <li>
-                <a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about" class="toggle-sub-menu">About
-                    us</a>
+                <a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/about" class="toggle-sub-menu">About us</a>
                 <ul class="sub-menu">
-                    <li class="mobile-home-link"><a href="https://www.nationalarchives.gov.uk/about">About us home</a>
-                    </li>
-                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/our-role/">Our role</a>
-                    </li>
-                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/visit-us/">Visit us</a>
-                    </li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/about/visit-us/opening-times/">Opening times</a>
-                    </li>
-                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/visit-us/whats-on/">What’s
-                        on</a></li>
-                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/visit-us/venue-hire/">Venue
-                        hire</a></li>
-                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/jobs/">Jobs</a></li>
-                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/get-involved/">Get
-                        involved</a></li>
-                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/about/news/">News</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/about/commercial-opportunities/">Commercial
-                        opportunities</a></li>
+                    <li class="mobile-home-link"><a href="https://dev-www.nationalarchives.gov.uk/about">About us home</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/about/our-role/">Our role</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/about/visit-us/">Visit us</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/about/visit-us/opening-times/">Opening times</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/about/visit-us/whats-on/">What’s on</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/about/visit-us/venue-hire/">Venue hire</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/about/jobs/">Jobs</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/about/get-involved/">Get involved</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/about/news/">News</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/about/commercial-opportunities/">Commercial opportunities</a></li>
                 </ul>
             </li>
             <li>
-                <a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/education/" class="toggle-sub-menu">Education</a>
+                <a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/education/" class="toggle-sub-menu">Education</a>
                 <ul class="sub-menu">
-                    <li class="mobile-home-link"><a href="https://www.nationalarchives.gov.uk/education/">Education
-                        home</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/education/sessions-and-resources/?time-period=medieval,early-modern,empire-and-industry,victorians,early-20th-century,interwar,second-world-war,postwar">Time
-                        periods</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/education/sessions-and-resources/?resource-type=lesson">Lessons</a>
-                    </li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/education/sessions-and-resources/?resource-type=workshop">Workshops</a>
-                    </li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/education/teachers/professional-development/">Professional
-                        development</a></li>
-                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/education/teachers/">For
-                        teachers</a></li>
-                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/education/students/">For
-                        students</a></li>
+                    <li class="mobile-home-link"><a href="https://dev-www.nationalarchives.gov.uk/education/">Education home</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/education/sessions-and-resources/?time-period=medieval,early-modern,empire-and-industry,victorians,early-20th-century,interwar,second-world-war,postwar">Time periods</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/education/sessions-and-resources/?resource-type=lesson">Lessons</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/education/sessions-and-resources/?resource-type=workshop">Workshops</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/education/teachers/professional-development/">Professional development</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/education/teachers/">For teachers</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/education/students/">For students</a></li>
                 </ul>
             </li>
             <li>
-                <a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/help-with-your-research"
-                   class="toggle-sub-menu">Help with your research</a>
+                <a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/help-with-your-research" class="toggle-sub-menu">Help with your research</a>
                 <ul class="sub-menu">
-                    <li class="mobile-home-link"><a href="https://www.nationalarchives.gov.uk/help-with-your-research">Help
-                        with your research home</a></li>
-                    <li><a data-gtm="mega-menu" href="https://discovery.nationalarchives.gov.uk/">Search Discovery, our
-                        catalogue</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/help-with-your-research/start-here/">Start your
-                        research here</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/help-with-your-research/research-guides-keywords/">Research
-                        guides A-Z</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=online">Online
-                        collections</a></li>
-                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/webarchive/">UK Government Web
-                        Archive</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/contact-us/british-citizenship-services/">British
-                        citizenship services</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/help-with-your-research/record-copying/">Record
-                        copying</a></li>
+                    <li class="mobile-home-link"><a href="https://dev-www.nationalarchives.gov.uk/help-with-your-research">Help with your research home</a></li>
+                    <li><a data-gtm="mega-menu" href="https://discovery.nationalarchives.gov.uk/">Search Discovery, our catalogue</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/help-with-your-research/start-here/">Start your research here</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/help-with-your-research/research-guides-keywords/">Research guides A-Z</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=online">Online collections</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/webarchive/">UK Government Web Archive</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/contact-us/british-citizenship-services/">British citizenship services</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/help-with-your-research/record-copying/">Record copying</a></li>
                 </ul>
             </li>
             <li>
-                <a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/information-management/"
-                   class="toggle-sub-menu">Information management</a>
+                <a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/information-management/" class="toggle-sub-menu">Information management</a>
                 <ul class="sub-menu">
-                    <li class="mobile-home-link"><a href="https://www.nationalarchives.gov.uk/information-management/">Information
-                        management home</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/information-management/browse-guidance-standards/">Guidance
-                        and standards A-Z</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">Copyright</a>
-                    </li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/information-management/manage-information/">How to
-                        manage your information</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/">Re-using
-                        PSI</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/information-management/producing-official-publications/">Producing
-                        official publications</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/information-management/legislation/">Legislation
-                        and regulations</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/information-management/training/">Training</a></li>
+                    <li class="mobile-home-link"><a href="https://dev-www.nationalarchives.gov.uk/information-management/">Information management home</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/information-management/browse-guidance-standards/">Guidance and standards A-Z</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">Copyright</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/information-management/manage-information/">How to manage your information</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/">Re-using PSI</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/information-management/producing-official-publications/">Producing official publications</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/information-management/legislation/">Legislation and regulations</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/information-management/training/">Training</a></li>
                 </ul>
             </li>
             <li>
-                <a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/archives-sector"
-                   class="toggle-sub-menu">Archives sector</a>
+                <a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/archives-sector" class="toggle-sub-menu">Archives sector</a>
                 <ul class="sub-menu">
-                    <li class="mobile-home-link"><a href="https://www.nationalarchives.gov.uk/archives-sector">Archives
-                        sector home</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/archives-sector/our-archives-sector-role/historical-manuscripts-commission/">Historical
-                        Manuscripts Commission</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/archives-sector/finding-funding/">Finding
-                        funding</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/archives-sector/projects-and-programmes/">Projects
-                        and programmes</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/archives-sector/case-studies-and-research-reports/">Case
-                        studies and research reports</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/">Operating
-                        your archive</a></li>
-                    <li><a data-gtm="mega-menu"
-                           href="https://www.nationalarchives.gov.uk/archives-sector/our-archives-sector-role/">Our role
-                        in the archives sector</a></li>
+                    <li class="mobile-home-link"><a href="https://dev-www.nationalarchives.gov.uk/archives-sector">Archives sector home</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/archives-sector/our-archives-sector-role/historical-manuscripts-commission/">Historical Manuscripts Commission</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/archives-sector/finding-funding/">Finding funding</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/archives-sector/projects-and-programmes/">Projects and programmes</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/archives-sector/case-studies-and-research-reports/">Case studies and research reports</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/">Operating your archive</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/archives-sector/our-archives-sector-role/">Our role in the archives sector</a></li>
                 </ul>
             </li>
             <li>
@@ -214,19 +149,19 @@
                     <li><a data-gtm="mega-menu" href="https://shop.nationalarchives.gov.uk/">Shop</a></li>
                     <li><a data-gtm="mega-menu" href="https://images.nationalarchives.gov.uk/">Image library</a></li>
                     <li><a data-gtm="mega-menu" href="https://blog.nationalarchives.gov.uk/">Blog</a></li>
-                    <li><a data-gtm="mega-menu" href="https://media.nationalarchives.gov.uk/">Podcasts and videos</a>
-                    </li>
-                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/contact-us/">Contact us</a>
-                    </li>
+                    <li><a data-gtm="mega-menu" href="https://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
+                    <li><a data-gtm="mega-menu" href="https://dev-www.nationalarchives.gov.uk/contact-us/">Contact us</a></li>
                 </ul>
             </li>
         </ul>
     </div>
 </nav>
 
-
-<main class="pb-3 kbs" id="main-content">
+<main class="kbs pb-3" id="main-content">
     <div class="container">
+
+
+
         <div class="tna-breadcrumb">
             <ul>
                 <li><a href="/">Home</a> &gt;</li>
@@ -234,241 +169,236 @@
             </ul>
         </div>
 
-
         <h1 class="display-4">4. Order documents for your visit</h1>
 
-        <div>
+        <div class="container content-wrapper">
 
-            <div class="container content-wrapper">
+            <section class="row" id="progress-bar">
+                <h2 class="sr-only">Progress</h2>
+                <div class="col-md-12">
+                    <ol>
+                        <li><span class="step-number">1</span> <span class="step">Select a date</span></li>
+                        <li><span class="step-number">2</span> <span class="step">Enter your details</span></li>
+                        <li><span class="step-number">3</span> <span class="step">Your visit details</span></li>
+                        <li aria-current="page" class="active"><span class="step-number">4</span> <span class="step">Order documents</span></li>
+                        <li><span class="step-number">5</span> <span class="step">Order summary</span></li>
+                    </ol>
+                </div>
+            </section>
 
-                <section class="row" id="progress-bar">
-                    <h2 class="sr-only">Progress</h2>
+            <div class="heading align-left">
+                <div class="row">
                     <div class="col-md-12">
-                        <ol>
-                            <li><span class="step-number">1</span> <span class="step">Select a date</span></li>
-                            <li><span class="step-number">2</span> <span class="step">Enter your details</span></li>
-                            <li><span class="step-number">3</span> <span class="step">Your visit details</span>
-                            </li>
-                            <li aria-current="page" class="active"><span class="step-number">4</span> <span
-                                    class="step">Order documents</span></li>
-                            <li><span class="step-number">5</span> <span class="step">Order summary</span></li>
-                        </ol>
-                    </div>
-                </section>
-
-                <div class="heading align-left">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Tell us which documents you would like to see</h2>
-                            <p>
-                                You have a provisional booking to visit the reading rooms. Complete this form to order original documents held by The National Archives.
-                            </p>
-
-                            <p>If you do not complete this step by <span class="bold-text">Monday 29 March 2021 at 11:59pm British Summer Time (BST)</span> your visit will be automatically cancelled. Once this date has passed, you cannot change your document order as we will begin preparing your order for your visit.</p>
-                            <p>
-                                Return to edit or view your document order using this link:<br>
-                                <a target="_blank" rel="noreferrer noopener" href="/book-a-reading-room-visit/return-to-booking">https://www.nationalarchives.gov.uk/book-a-reading-room-visit/return-to-booking</a></p>
-                            <p>This link will be included in your provisional booking email if you provided an email address. If you cannot see this email in your inbox, check your spam and junk email folders.</p>
-
-
-                        </div>
+                        <h2>Tell us which documents you would like to see</h2>
+                        <p>
+                            You have a provisional booking to visit the reading rooms. Complete this form to order original documents held by The National
+                            Archives.
+                        </p>
+                        <p>
+                            If you do not complete this step by <span class="bold-text">Monday 26 April 2021 at 11:59 PM British Summer Time (BST)</span>
+                            your visit will be automatically cancelled. Once this date has passed, you cannot change your document order as we will begin
+                            preparing your order for your visit.
+                        </p>
+                        <p>
+                            Return to edit or view your document order using this link:<br>
+                            <a target="_blank" rel="noreferrer noopener" href="/book-a-reading-room-visit/return-to-booking">https://dev-www.nationalarchives.gov.uk/book-a-reading-room-visit/return-to-booking</a>
+                        </p>
+                        <p>
+                            This link will be included in your provisional booking email if you provided an email address. If you cannot see this email in
+                            your inbox, check your spam and junk email folders.
+                        </p>
                     </div>
                 </div>
+            </div>
 
-                <div class="booking-details">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Your booking details</h3>
-                            <table class="table">
-                                <tbody>
-                                <tr>
-                                    <th scope="row">Booking reference</th>
-                                    <td>RR731-820-2042X</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Reader's ticket number</th>
-                                    <td>999888</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Visit date</th>
-                                    <td>Wednesday 07 April 2021</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Visit type</th>
-                                    <td>
-                                       Standard visit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Reading room</th>
-                                    <td>
-                                        Document reading room <span class="secondary-info">All seats have camera stands.</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Seat number</th>
-                                    <td>
-                                        15D
-                                        <span class="secondary-info">Based on availability, we may need to change your seat on the date of your
-                                            visit.</span>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <form action="/book-a-reading-room-visit/standard-order-visit/cancel-booking" method="post">
-                                <input name="__RequestVerificationToken" type="hidden"
-                                       value="CfDJ8Fm9gkvp_CNDnCItEvXaYYeiz3lk7jOA5OnTqmVf00Y8IcTkydRymAIHuvWHEHxN_07Z7JKwBqLNjH5LcDJT8ThNOzpVCFFyI8H35kw_gRuvuCJw42KPQukc_wG_mHPRRZIst0bBaQ5fkd327c4iamY"/>
-                                <input id="BookingReference" name="BookingReference" type="hidden"
-                                       value="RR731-820-2042X"/>
-                                <input id="readerticket" name="readerticket" type="hidden" value="999"/>
-                                <input data-val="true" data-val-required="The SeatType field is required." id="SeatType"
-                                       name="SeatType" type="hidden" value="StdRRSeat"/>
-                                <input data-val="true" data-val-required="The BookingStartDate field is required."
-                                       id="BookingStartDate" name="BookingStartDate" type="hidden"
-                                       value="04/07/2021 00:00:00"/>
-                                <input id="SeatNumber" name="SeatNumber" type="hidden" value="15D"/>
-                                <button type="submit" class="button secondary-button">Cancel your visit</button>
-                            </form>
-                        </div>
+            <div class="booking-details">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Your booking details</h3>
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <th scope="row">Booking reference</th>
+                                <td>
+                                    RR201-510-4036S <span class="secondary-info">A copy of this has been emailed to you. If you didn't provide your email address as part of the booking process, you need to safely note your booking reference.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Reader's ticket number</th>
+                                <td>999</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Visit date</th>
+                                <td>Tuesday 04 May 2021</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Visit type</th>
+                                <td>
+                                    Standard visit
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Reading room</th>
+                                <td>Document reading room <span class="secondary-info">All seats have camera stands.</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Seat number</th>
+                                <td>
+                                    23B
+                                    <span class="secondary-info">Based on availability, we may need to change your seat on the date of your visit.</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <form action="/book-a-reading-room-visit/standard-order-visit/cancel-booking" method="post">
+                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYdbdH2dmIwF6gz1NGE5eyghuw_cKQJ__nTeskG8Wjp3lV7JQYLKeNtsTMt3qaaRvec4AwL49FXmzErOf--c2_xhKWYmWVMP6mfX579MGV2d4BLpzvzP9mHmOhoYe9ivY6M" />
+                            <input id="BookingReference" name="BookingReference" type="hidden" value="RR201-510-4036S" />
+                            <input id="readerticket" name="readerticket" type="hidden" value="999" />
+                            <input id="seattype" name="seattype" type="hidden" value="standard-reading-room" />
+                            <input data-val="true" data-val-required="The BookingStartDate field is required." id="BookingStartDate" name="BookingStartDate" type="hidden" value="05/04/2021 00:00:00" />
+                            <input id="SeatNumber" name="SeatNumber" type="hidden" value="23B" />
+                            <button type="submit" class="button secondary-button">Cancel your visit</button>
+                        </form>
                     </div>
                 </div>
-                <div class="prompt-grey full-width warning-panel">
-                    <p class="no-margin">
-                        You can add to or remove documents from this order <span class="bold-text">until Monday 29 March 2021 at 11:59pm British Summer Time (BST)</span>.
-                    </p>
-                </div>
+            </div>
 
+            <div class="prompt-grey full-width warning-panel">
+                <p class="no-margin">
+                    You can add or remove documents from this order <span class="bold-text">until Monday 26 April 2021 at 11:59 PM British Summer Time (BST)</span>.
+                </p>
+            </div>
 
-                <div class="order-form">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <form action="/book-a-reading-room-visit/standard-order-visit/document-order/999/RR731-820-2042X"
-                                  method="POST">
-                                <input name="__RequestVerificationToken" type="hidden"
-                                       value="CfDJ8Fm9gkvp_CNDnCItEvXaYYeiz3lk7jOA5OnTqmVf00Y8IcTkydRymAIHuvWHEHxN_07Z7JKwBqLNjH5LcDJT8ThNOzpVCFFyI8H35kw_gRuvuCJw42KPQukc_wG_mHPRRZIst0bBaQ5fkd327c4iamY"/>
-                                <fieldset>
-                                    <legend>Enter up to 12 full catalogue references</legend>
-                                    <p class="helper-text">Documents can be from multiple series, for example ADM 22 and C 142.<br>
-                                        Search <a target="_blank" rel="noreferrer noopener" href="https://discovery.nationalarchives.gov.uk/">Discovery, our catalogue</a> to find catalogue references.</p>
-                                    <p><span class="warning">You need to add at least 1 document before the deadline to avoid your order being cancelled.</span></p>
-                                    <div class="col-md-3 col-sm-6 col-xs-6">
-                                        <div class="order-form-field">
-                                            <label for="doc-1">1</label>
-                                            <input id="doc-1" name="doc-1" type="text"/>
-                                        </div>
+            <div class="order-form">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="/book-a-reading-room-visit/standard-order-visit/order-documents/999/RR201-510-4036S" method="POST" novalidate>
+                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fm9gkvp_CNDnCItEvXaYYdbdH2dmIwF6gz1NGE5eyghuw_cKQJ__nTeskG8Wjp3lV7JQYLKeNtsTMt3qaaRvec4AwL49FXmzErOf--c2_xhKWYmWVMP6mfX579MGV2d4BLpzvzP9mHmOhoYe9ivY6M" />
+                            <input data-val="true" data-val-required="The BookingStartDate field is required." id="BookingStartDate" name="BookingStartDate" type="hidden" value="05/04/2021 00:00:00" />
+                            <input id="CompleteByDate" name="CompleteByDate" type="hidden" value="04/26/2021 23:59:00" />
+                            <input id="CompleteByDate" name="CompleteByDate" type="hidden" value="04/26/2021 23:59:00" />
+                            <input id="seattype" name="seattype" type="hidden" value="standard-reading-room" />
+                            <input id="SeatNumber" name="SeatNumber" type="hidden" value="23B" />
 
-                                        <div class="order-form-field">
-                                            <label for="doc-2">2</label>
-                                            <input id="doc-2" name="doc-2" type="text"/>
-                                        </div>
+                            <fieldset>
+                                <legend>Enter up to 12 full catalogue references</legend>
+                                <p class="helper-text">
+                                    Documents can be from multiple series, for example ADM 22 and C 142.<br>
+                                    Search <a target="_blank" rel="noreferrer noopener" href="https://discovery.nationalarchives.gov.uk/">Discovery, our catalogue</a>
+                                    to find catalogue references.
+                                </p>
 
-                                        <div class="order-form-field">
-                                            <label for="doc-3">3</label>
-                                            <input id="doc-3" name="doc-3" type="text"/>
-                                        </div>
-                                    </div>
+                                <p class="warning">
+                                    You need to add at least 1 document before the deadline to avoid your order being cancelled.
+                                </p>
 
-                                    <div class="col-md-3 col-sm-6 col-xs-6">
-                                        <div class="order-form-field">
-                                            <label for="doc-4">4</label>
-                                            <input id="doc-4" name="doc-4" type="text"/>
-                                        </div>
+                                <div class="col-md-3 col-sm-12 col-xs-12">
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference1">1</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference1 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference1" maxlength="50" name="DocumentReference1" type="text" value="" />        </div>
 
-                                        <div class="order-form-field">
-                                            <label for="doc-5">5</label>
-                                            <input id="doc-5" name="doc-5" type="text"/>
-                                        </div>
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference2">2</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference2 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference2" maxlength="50" name="DocumentReference2" type="text" value="" />        </div>
 
-                                        <div class="order-form-field">
-                                            <label for="doc-6">6</label>
-                                            <input id="doc-6" name="doc-6" type="text"/>
-                                        </div>
-                                    </div>
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference3">3</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference3 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference3" maxlength="50" name="DocumentReference3" type="text" value="" />        </div>
+                                </div>
 
-                                    <div class="col-md-3 col-sm-6 col-xs-6">
-                                        <div class="order-form-field">
-                                            <label for="doc-7">7</label>
-                                            <input id="doc-7" name="doc-7" type="text"/>
-                                        </div>
+                                <div class="col-md-3 col-sm-12 col-xs-12">
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference4">4</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference4 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference4" maxlength="50" name="DocumentReference4" type="text" value="" />        </div>
 
-                                        <div class="order-form-field">
-                                            <label for="doc-8">8</label>
-                                            <input id="doc-8" name="doc-8" type="text"/>
-                                        </div>
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference5">5</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference5 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference5" maxlength="50" name="DocumentReference5" type="text" value="" />        </div>
 
-                                        <div class="order-form-field">
-                                            <label for="doc-9">9</label>
-                                            <input id="doc-9" name="doc-9" type="text"/>
-                                        </div>
-                                    </div>
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference6">6</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference6 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference6" maxlength="50" name="DocumentReference6" type="text" value="" />        </div>
+                                </div>
 
-                                    <div class="col-md-3 col-sm-6 col-xs-6">
-                                        <div class="order-form-field">
-                                            <label for="doc-10">10</label>
-                                            <input id="doc-10" name="doc-10" type="text"/>
-                                        </div>
+                                <div class="col-md-3 col-sm-12 col-xs-12">
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference7"">7</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference7 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference7" maxlength="50" name="DocumentReference7" type="text" value="" />        </div>
 
-                                        <div class="order-form-field">
-                                            <label for="doc-11">11</label>
-                                            <input id="doc-11" name="doc-11" type="text"/>
-                                        </div>
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference8">8</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference8 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference8" maxlength="50" name="DocumentReference8" type="text" value="" />        </div>
 
-                                        <div class="order-form-field">
-                                            <label for="doc-12">12</label>
-                                            <input id="doc-12" name="doc-12" type="text"/>
-                                        </div>
-                                    </div>
-                                </fieldset>
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference9">9</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference9 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference9" maxlength="50" name="DocumentReference9" type="text" value="" />        </div>
+                                </div>
 
-                                <fieldset>
-                                    <legend>Enter up to 3 reserve catalogue references</legend>
-                                    <p class="helper-text">You can provide 3 reserve catalogue references in case
-                                        your first choices are unavailable.</p>
+                                <div class="col-md-3 col-sm-12 col-xs-12">
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference10">10</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference10 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference10" maxlength="50" name="DocumentReference10" type="text" value="" />        </div>
 
-                                    <div class="col-md-3 col-sm-6 col-xs-6">
-                                        <div class="order-form-field">
-                                            <label for="reserve-1">A</label>
-                                            <input id="reserve-1" name="reserve-1" type="text"/>
-                                        </div>
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference11">11</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference11 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference11" maxlength="50" name="DocumentReference11" type="text" value="" />        </div>
 
-                                        <div class="order-form-field">
-                                            <label for="reserve-2">B</label>
-                                            <input id="reserve-2" name="reserve-2" type="text"/>
-                                        </div>
+                                    <div class="order-form-field">
+                                        <label for="DocumentReference12">12</label>
+                                        <input data-val="true" data-val-maxlength="The field DocumentReference12 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="DocumentReference12" maxlength="50" name="DocumentReference12" type="text" value="" />        </div>
+                                </div>
+                            </fieldset>
 
-                                        <div class="order-form-field">
-                                            <label for="reserve-3">C</label>
-                                            <input id="reserve-3" name="reserve-3" type="text"/>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>
-                                        <label for="additional-reqs">Additional access requirements or research
-                                            requests</label>
-                                    </legend>
+                            <fieldset>
+                                <legend>Enter up to 3 reserve catalogue references</legend>
+                                <p class="helper-text">
+                                    You can provide 3 reserve catalogue references in case
+                                    your first choices are unavailable.
+                                </p>
 
-                                    <p class="helper-text">Tell us about your access needs, including if you have mobility access requirements. You can also use this space to tell us your research requests, including library materials, microfilm/microfiche, or finding/preservation aids that are normally available on self-service.</p>
+                                <div class="col-md-3 col-sm-12 col-xs-12">
+                                    <div class="order-form-field">
+                                        <label for="ReserveDocumentReference1">A</label>
+                                        <input data-val="true" data-val-maxlength="The field ReserveDocumentReference1 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="ReserveDocumentReference1" maxlength="50" name="ReserveDocumentReference1" type="text" value="" />        </div>
 
-                                    <p class="helper-text">We cannot guarantee that all of the research materials you request will be available.</p>
+                                    <div class="order-form-field">
+                                        <label for="ReserveDocumentReference2">B</label>
+                                        <input data-val="true" data-val-maxlength="The field ReserveDocumentReference2 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="ReserveDocumentReference2" maxlength="50" name="ReserveDocumentReference2" type="text" value="" />        </div>
 
-                                    <textarea id="additional-reqs" name="additional-reqs"></textarea>
-                                </fieldset>
+                                    <div class="order-form-field">
+                                        <label for="ReserveDocumentReference3">C</label>
+                                        <input data-val="true" data-val-maxlength="The field ReserveDocumentReference3 must be a string or array type with a maximum length of &#x27;50&#x27;." data-val-maxlength-max="50" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="ReserveDocumentReference3" maxlength="50" name="ReserveDocumentReference3" type="text" value="" />        </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    <label for="additional-reqs">Access needs and research requests</label>
+                                </legend>
 
-                                <button class="button" type="submit">Save and review</button>
-                            </form>
-                        </div>
+                                <p class="helper-text">
+                                    Tell us about your access needs, including if you have mobility access requirements. You can also use
+                                    this space to tell us your research requests, including library materials, microfilm/microfiche, or finding/preservation
+                                    aids that are normally available on self-service.
+                                </p>
+
+                                <p class="helper-text">We cannot guarantee that all of the research materials you request will be available.</p>
+
+                                <textarea data-val="true" data-val-regex="You have entered an HTML tag. Enter valid details." data-val-regex-pattern="^(?!.*&lt;[^&gt;]&#x2B;&gt;).*" id="additional-reqs" name="AdditionalRequirements">
+</textarea>                    </fieldset>
+                            <button class="button" type="submit">Save and review</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
+
 <section class="contact-footer">
     <div class="row">
         <div class="col-md-6 first">
             <h2>Need help with this service?</h2>
-            <a target="_blank" rel="noreferrer noopener" href="https://www.nationalarchives.gov.uk/contact-us/">Contact us</a>
+            <a target="_blank" rel="noreferrer noopener" href="https://dev-www.nationalarchives.gov.uk/contact-us/">Contact us</a>
         </div>
         <div class="col-md-6">
             <h2>What do you think of this service?</h2>
@@ -489,9 +419,7 @@
                 <div class="col-md-11">
                     <div class="news-content" id="newsletterAccessibility">
                         <h3>Sign me up to The National Archives' mailing list</h3>
-                        <p>Subscribe now for regular news, updates and priority booking for events.<br><a
-                                href="https://www.nationalarchives.gov.uk/contact-us/email-updates/" class="button">Sign
-                            up</a></p>
+                        <p>Subscribe now for regular news, updates and priority booking for events.<br><a href="https://dev-www.nationalarchives.gov.uk/contact-us/email-updates/" class="button">Sign up</a></p>
                     </div>
                 </div>
             </div>
@@ -504,12 +432,10 @@
                 <div class="footer-col col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <div class="row">
                         <div class="footer-col col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                            <img src="/book-a-reading-room-visit/images/tna-square-white-logo.png"
-                                 srcset="/book-a-reading-room-visit/images/tna-square-white-logo.svg"
-                                 alt="The National Archives" class="img-responsive square-logo">
+                            <img src="/book-a-reading-room-visit/images/tna-square-white-logo.png" srcset="/book-a-reading-room-visit/images/tna-square-white-logo.svg" alt="The National Archives" class="img-responsive square-logo">
                             <address>
-                                The National Archives<br/>
-                                Kew, Richmond<br/>
+                                The National Archives<br />
+                                Kew, Richmond<br />
                                 TW9 4DU
                             </address>
                         </div>
@@ -520,12 +446,10 @@
                         <div class="footer-col col-xs-12 col-sm-6 col-md-6">
                             <h3>Find out more</h3>
                             <ul>
-                                <li><a href="https://www.nationalarchives.gov.uk/contact-us/">Contact us</a></li>
-                                <li><a href="https://www.nationalarchives.gov.uk/about/press-room/">Press room</a></li>
-                                <li><a href="https://www.nationalarchives.gov.uk/about/jobs/">Jobs and careers</a></li>
-                                <li>
-                                    <a href="https://www.nationalarchives.gov.uk/about/get-involved/friends-of-the-national-archives/">Friends
-                                        of The National Archives</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/contact-us/">Contact us</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/about/press-room/">Press room</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/about/jobs/">Jobs and careers</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/about/get-involved/friends-of-the-national-archives/">Friends of The National Archives</a></li>
                             </ul>
                         </div>
                         <div class="footer-col col-xs-12 col-sm-6 col-md-6">
@@ -535,14 +459,9 @@
                                 <li><a href="https://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
                                 <li><a href="http://bookshop.nationalarchives.gov.uk/">Bookshop</a></li>
                                 <li><a href="https://images.nationalarchives.gov.uk/">Image library</a></li>
-                                <li><a href="https://www.nationalarchives.gov.uk/webarchive/">UK Government Web
-                                    Archive</a></li>
-                                <li><a href="https://www.legislation.gov.uk/" target="_blank" rel="noreferrer"
-                                       title="Opens a new window">Legislation.gov.uk<span class="sr-only">Opens a new window</span></a>
-                                </li>
-                                <li><a href="https://www.thegazette.co.uk/" target="_blank" rel="noreferrer"
-                                       title="Opens a new window">The Gazette<span
-                                        class="sr-only">Opens a new window</span></a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/webarchive/">UK Government Web Archive</a></li>
+                                <li><a href="https://www.legislation.gov.uk/" target="_blank" rel="noreferrer" title="Opens a new window">Legislation.gov.uk<span class="sr-only">Opens a new window</span></a></li>
+                                <li><a href="https://www.thegazette.co.uk/" target="_blank" rel="noreferrer" title="Opens a new window">The Gazette<span class="sr-only">Opens a new window</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -550,26 +469,20 @@
                         <div class="footer-col col-xs-12 col-sm-6 col-md-6">
                             <h3>Site help</h3>
                             <ul>
-                                <li><a href="https://www.nationalarchives.gov.uk/help/">Help</a></li>
-                                <li><a href="https://www.nationalarchives.gov.uk/help/a-to-z/">Website A-Z index</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.nationalarchives.gov.uk/help/web-accessibility/">Accessibility</a>
-                                </li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/help/">Help</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/help/a-to-z/">Website A-Z index</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/help/web-accessibility/">Accessibility</a></li>
                             </ul>
                         </div>
                         <div class="footer-col col-xs-12 col-sm-6 col-md-6">
                             <h3>Legal</h3>
                             <ul>
-                                <li><a href="https://www.nationalarchives.gov.uk/legal/">Terms of use</a></li>
-                                <li><a href="https://www.nationalarchives.gov.uk/legal/privacy.htm">Privacy policy</a>
-                                </li>
-                                <li><a href="https://www.nationalarchives.gov.uk/legal/cookies.htm">Cookies</a></li>
-                                <li><a href="https://www.nationalarchives.gov.uk/about/freedom-of-information/">Freedom
-                                    of Information</a></li>
-                                <li><a href="https://www.nationalarchives.gov.uk/about/our-role/transparency/">Transparency</a>
-                                </li>
-                                <li><a href="https://www.nationalarchives.gov.uk/legal/our-fees.htm">Our fees</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/legal/">Terms of use</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/legal/privacy.htm">Privacy policy</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/legal/cookies.htm">Cookies</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/about/freedom-of-information/">Freedom of Information</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/about/our-role/transparency/">Transparency</a></li>
+                                <li><a href="https://dev-www.nationalarchives.gov.uk/legal/our-fees.htm">Our fees</a></li>
                             </ul>
                         </div>
                     </div>
@@ -579,36 +492,31 @@
                         <div class="footer-col col-xs-12 col-sm-6 col-md-12">
                             <h3>Follow us</h3>
                             <div class="follow-us">
-                                <a href="https://twitter.com/UKNatArchives"
-                                   title="Follow us on Twitter - Opens a new window" target="_blank" rel="noreferrer">
-                                    <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/twitter.png"
-                                         alt="Twitter logo">
+                                <a href="https://twitter.com/UKNatArchives" title="Follow us on Twitter - Opens a new window" target="_blank" rel="noreferrer">
+                                    <img src="/book-a-reading-room-visit/images/twitter.png" alt="Twitter logo">
                                     <span class="sr-only">Opens a new window</span>
                                 </a>
-                                <a href="https://www.youtube.com/c/TheNationalArchivesUK"
-                                   title="Follow us on YouTube - Opens a new window"
+                                <a href="https://www.youtube.com/c/TheNationalArchivesUK" title="Follow us on YouTube - Opens a new window"
                                    target="_blank" rel="noreferrer">
-                                    <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/youtube-play.png"
-                                         alt="YouTube logo">
+                                    <img src="/book-a-reading-room-visit/images/youtube-play.png" alt="YouTube logo">
                                     <span class="sr-only">Opens a new window</span>
                                 </a>
-                                <a href="https://www.flickr.com/photos/nationalarchives"
-                                   title="Follow us on Flickr - Opens a new window"
+                                <a href="https://www.flickr.com/photos/nationalarchives" title="Follow us on Flickr - Opens a new window"
                                    target="_blank" rel="noreferrer">
-                                    <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/flickr.png"
-                                         alt="Flickr logo">
+                                    <img src="/book-a-reading-room-visit/images/flickr.png" alt="Flickr logo">
                                     <span class="sr-only">Opens a new window</span>
                                 </a>
-                                <a href="https://www.facebook.com/TheNationalArchives"
-                                   title="Follow us on Facebook - Opens a new window"
+                                <a href="https://www.facebook.com/TheNationalArchives" title="Follow us on Facebook - Opens a new window"
                                    target="_blank" rel="noreferrer">
-                                    <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/facebook.png"
-                                         alt="Facebook logo">
+                                    <img src="/book-a-reading-room-visit/images/facebook.png" alt="Facebook logo">
                                     <span class="sr-only">Opens a new window</span>
                                 </a>
-                                <a href="http://www.nationalarchives.gov.uk/rss/" title="Follow us via RSS">
-                                    <img src="https://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/rss.png"
-                                         alt="RSS logo">
+                                <a href="https://www.instagram.com/nationalarchivesuk/" title="Follow us on Instagram - Opens a new window" target="_blank" rel="noopener noreferrer">
+                                    <img src="/book-a-reading-room-visit/images//instagram.png" alt="Instagram logo">
+                                    <span class="sr-only">Opens a new window</span>
+                                </a>
+                                <a href="http://dev-www.nationalarchives.gov.uk/rss/" title="Follow us via RSS">
+                                    <img src="/book-a-reading-room-visit/images/rss.png" alt="RSS logo">
                                 </a>
                             </div>
                         </div>
@@ -621,21 +529,11 @@
 
             <div class="row footer-base">
                 <div class="col-xs-12 col-sm-9 col-md-9 ogl">
-                    <a title="External website - opens in a new window"
-                       href="https://www.nationalarchives.gov.uk/doc/open-government-licence/"> <img
-                            alt="Open Government License logo"
-                            src="https://www.nationalarchives.gov.uk/images/global/logo-ogl.png"/> <span
-                            class="sr-only">Opens in a new window</span> </a>
-                    <p>All content is available under the <a
-                            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government
-                        Licence v3.0</a>, <br/>except where otherwise stated </p>
+                    <img alt="Open Government License logo" src="/book-a-reading-room-visit/images/logo-ogl.png" />
+                    <p>All content is available under the <a href="https://dev-www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence v3.0</a>, <br />except where otherwise stated </p>
                 </div>
                 <div class="col-xs-12 col-sm-3 col-md-3 gov-uk">
-                    <a class="footer-base-external-branding-gov-logo-adjust"
-                       title="External website - opens in a new window" href="https://gov.uk/" target="_blank"
-                       rel="noreferrer"> <img alt="GOV.UK logo"
-                                              src="https://www.nationalarchives.gov.uk/images/global/gov-uk.png"/> <span
-                            class="sr-only">Opens in a new window</span> </a>
+                    <a class="footer-base-external-branding-gov-logo-adjust" title="External website - opens in a new window" href="https://gov.uk/" target="_blank" rel="noreferrer"> <img alt="GOV.UK logo" src="/book-a-reading-room-visit/images/gov-uk.png" /> <span class="sr-only">Opens in a new window</span> </a>
                 </div>
             </div>
         </div>
@@ -645,5 +543,8 @@
 <script src="/book-a-reading-room-visit/lib/jquery/dist/jquery.min.js"></script>
 <script src="/book-a-reading-room-visit/js/mega-menu.js"></script>
 <script src="/book-a-reading-room-visit/js/cookie-banner.js"></script>
+<script src="/book-a-reading-room-visit/js/hide-room-info.js"></script>
+<script src="/book-a-reading-room-visit/js/dist/print-your-order.js"></script>
+<script src="/book-a-reading-room-visit/js/book-a-reading-room-visit-0.0.1.js"></script>
 </body>
 </html>
