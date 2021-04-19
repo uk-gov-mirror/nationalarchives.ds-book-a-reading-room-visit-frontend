@@ -135,6 +135,14 @@
     <li><span>7</span><a href="emails/src/invalid_order_reminder.html">Invalid order reminder</a><br>Sent to customer 2 days before the document ordering deadline for invalid orders.</li>
 </ul>
 
+<h2>Website pages</h2>
+<p>These are pages from the main website that are </p>
+<ul>
+    <li><span>1</span><a href="about-the-book-a-reading-room-visit-service.html">About the book a reading room visit service</a><br>The page linked to from 'find out more' links</li>
+    <li><span>2</span><a href="what-can-i-expect-when-i-visit.html">What can I expect when I visit?</a><br>The 'What can I expect?' page from the Visit Us section of the site</li>
+    <li><span>3</span><a href="privacy-policy.html">Privacy policy</a><br>The privacy policy page</li>
+    <li><span>4</span><a href="terms-of-use.html">Terms of use</a><br>The terms of use</li>
+</ul>
 </body>
 </html>
 
